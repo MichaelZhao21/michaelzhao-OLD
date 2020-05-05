@@ -1,6 +1,6 @@
 # Creating my Personal Website
 
-## 5/5/20
+## 5/5/20 | First Day
 
 ### Code Setup
 
@@ -27,6 +27,10 @@ A lot of the day was spent coming up with ideas for designing the webpage and lo
 - [CSS Scroll Animations](https://cssanimation.rocks/scroll-animations/)
 - [Awwwards - really good websites](https://www.awwwards.com/websites/)
 - [Amazing, interactive website](https://bruno-simon.com/)
+
+Here's the initial design of the logo I drew up in Photoshop. I like the colors and gradient; kinda very iffy on the design though
+
+![First Design of Logo](website-creation-0000/favicon-first.png)
 
 ### Reflections
 
