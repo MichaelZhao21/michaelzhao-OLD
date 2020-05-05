@@ -12,6 +12,8 @@ npx create-react-app [appName]
 
 This generated a rather ugly file structure, so the rest of the day was spent cleaning up the file system and removing a lot of the excess files.
 
+**Routers** have been discovered :DDD. I'm adding it to create the multiple pages I have (hope it works!). Here's the link to the Tutorial page: [React Routers](https://www.tutorialspoint.com/reactjs/reactjs_router.htm)
+
 ### Design
 
 I drew up a basic outline of the first iteration of the website, which would obviously be improved upon, but it's not bad for a first design:
@@ -42,3 +44,4 @@ I am going to focus on creating routing between pages and getting a working blog
 - Create routing system
 - Create framework for blog
 - Still clean up file system
+
