@@ -5,7 +5,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import Main from './Main';
+import Main from './pages/Main';
 
 export default function App() {
   return (
@@ -37,7 +37,7 @@ export default function App() {
             <Blog />
           </Route>
           <Route path="/">
-            <Main />
+            <Main name="Michael Zhao"/>
           </Route>
         </Switch>
       </div>

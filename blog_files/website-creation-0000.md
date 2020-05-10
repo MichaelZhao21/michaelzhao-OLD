@@ -41,7 +41,15 @@ I am going to focus on creating routing between pages and getting a working blog
 ### TODO
 
 - Make new icon (TODO: Change logo.svg)
-- Create routing system
+- ~~Create routing system~~
 - Create framework for blog
-- Still clean up file system
+- ~~Still clean up file system~~
+
+## 5/10/20 | Routing
+
+### Routing
+
+Today's big task was creating a routing system that would switch between the 4 pages that I have: Homepage, About, Projects, and Blog. I used `react-router-dom` to do this. All of the pages are now in their own respective folders, and the next goal is to create css for the header.
+
+### TODO
 
