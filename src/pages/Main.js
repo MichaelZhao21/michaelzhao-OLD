@@ -5,7 +5,7 @@ class Main extends React.Component {
 	render() {
 		return (
 			<div>
-				Hello {this.props.name}
+				Hello I'm {this.props.name}
 			</div>
 		)
 	}

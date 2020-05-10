@@ -6,6 +6,9 @@ import {
   Link,
 } from 'react-router-dom';
 import Main from './pages/Main';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 
 export default function App() {
   return (
@@ -44,16 +47,4 @@ export default function App() {
     </Router>
     
   );
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Projects() {
-  return <h2>Projects</h2>;
-}
-
-function Blog() {
-  return <h2>Blog</h2>;
 }
