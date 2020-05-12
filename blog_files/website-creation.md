@@ -51,5 +51,15 @@ I am going to focus on creating routing between pages and getting a working blog
 
 Today's big task was creating a routing system that would switch between the 4 pages that I have: Homepage, About, Projects, and Blog. I used `react-router-dom` to do this. All of the pages are now in their own respective folders, and the next goal is to create css for the header.
 
+## 5/12/20 | CSS R&D
+
+### Research
+
+I've listed a few ideas below for what I want to include in terms of CSS on my website:
+
+- [Scroll Animations](https://cssanimation.rocks/scroll-animations/) - Elements will load in an animated style and unload with a transition when the user scrolls them into/out of frame
+- [Dark Mode](https://uxdesign.cc/dark-mode-ui-design-the-definitive-guide-part-1-color-53dcfaea5129?gi=b0edf9ba0bf6) - Some sort of dark theme for my website would be cool; idk if I want to base it off of material theme just yet but I think a darker front page would look good
+
 ### TODO
 
+- Update manifest.json
