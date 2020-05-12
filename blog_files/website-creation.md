@@ -18,7 +18,7 @@ This generated a rather ugly file structure, so the rest of the day was spent cl
 
 I drew up a basic outline of the first iteration of the website, which would obviously be improved upon, but it's not bad for a first design:
 
-![First Sketch of Design](website-creation-0000/first-sketch.jpg)
+![First Sketch of Design](website-creation/first-sketch.jpg)
 
 A lot of the day was spent coming up with ideas for designing the webpage and logo for my website. Here's a list of helpful links that I can reference if needed:
 
@@ -32,7 +32,7 @@ A lot of the day was spent coming up with ideas for designing the webpage and lo
 
 Here's the initial design of the logo I drew up in Photoshop. I like the colors and gradient; kinda very iffy on the design though
 
-![First Design of Logo](website-creation-0000/favicon-first.png)
+![First Design of Logo](website-creation/favicon-first.png)
 
 ### Reflections
 
