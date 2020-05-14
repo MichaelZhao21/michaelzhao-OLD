@@ -5,29 +5,32 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+
 import Main from './pages/Main';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 
+import './App.css'
+
 export default function App() {
   return (
     <Router>
-      <div>
-        <ul>
-          <li>
+      <div className="App-header">
+        <div className="navbar">
+          <div className="menu-item">
             <Link to="/">Home</Link>
-          </li>
-          <li>
+          </div>
+          <div className="menu-item">
             <Link to="/about">About</Link>
-          </li>
-          <li>
+          </div>
+          <div className="menu-item">
             <Link to="/projects">Projects</Link>
-          </li>
-          <li>
+          </div>
+          <div className="menu-item">
             <Link to="/blog">Blog</Link>
-          </li>
-        </ul>
+          </div>
+        </div>
 
         <Switch>
           <Route path="/about">
@@ -40,11 +43,10 @@ export default function App() {
             <Blog />
           </Route>
           <Route path="/">
-            <Main name="Michael Zhao"/>
+            <Main name="Michael Zhao" />
           </Route>
         </Switch>
       </div>
     </Router>
-    
   );
 }

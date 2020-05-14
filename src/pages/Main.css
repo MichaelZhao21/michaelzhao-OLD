@@ -1,3 +1,19 @@
-.App {
-    text-align: center;
-  }
+.Main {
+  background-color: #121212;
+}
+
+.Corner {
+  height: 90%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.Name {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  color: #bdbdbd
+}

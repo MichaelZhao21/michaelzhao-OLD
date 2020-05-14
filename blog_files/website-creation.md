@@ -59,7 +59,23 @@ I've listed a few ideas below for what I want to include in terms of CSS on my w
 
 - [Scroll Animations](https://cssanimation.rocks/scroll-animations/) - Elements will load in an animated style and unload with a transition when the user scrolls them into/out of frame
 - [Dark Mode](https://uxdesign.cc/dark-mode-ui-design-the-definitive-guide-part-1-color-53dcfaea5129?gi=b0edf9ba0bf6) - Some sort of dark theme for my website would be cool; idk if I want to base it off of material theme just yet but I think a darker front page would look good
+- Sticky top that has moves up when the page is scrolled but blends in initially
+
+Someone (me) forgot how to use CSS!!! So here are just some links to helpful resources when I start adding CSS:
+
+- [Layout (Horizontal/Vertical Alignment)](https://www.w3schools.com/css/css_align.asp)
+- [Position property](https://www.w3schools.com/css/css_positioning.asp)
 
 ### TODO
 
 - Update manifest.json
+
+## 5/14/20
+
+More CSS things to consider:
+
+- [Responsive Web Design](https://www.w3schools.com/css/css_rwd_intro.asp)
+- Mobile-First design (Design smth that works well on mobile FIRST)
+    - Important bc ppl like looking at stuff on their phones
+    - Use viewport & media queries to do this!!!
+- [Scaling SVGs](https://css-tricks.com/scale-svg/)
