@@ -72,10 +72,24 @@ Someone (me) forgot how to use CSS!!! So here are just some links to helpful res
 
 ## 5/14/20
 
-More CSS things to consider:
+### More CSS things to consider
 
 - [Responsive Web Design](https://www.w3schools.com/css/css_rwd_intro.asp)
 - Mobile-First design (Design smth that works well on mobile FIRST)
     - Important bc ppl like looking at stuff on their phones
     - Use viewport & media queries to do this!!!
 - [Scaling SVGs](https://css-tricks.com/scale-svg/)
+
+### Coding!
+
+I added very primitive CSS (lol super messy) and added my own svg graphic for a cool pattern in the corner (may or may not keep it depending on more graphics to come in the future :O) The overall theme will be some form of dark theme, but I don't know exactly what color scheme I should choose. IT IS VERY UGLY RN DON'T COME AT ME!!!
+
+![Picture of Website With Basic CSS](website-creation/first-css.png)
+
+### TODO
+
+- Make new icon
+    - logo.svg
+    - favicon.ico
+    - manifest.json
+- Create framework for blog
