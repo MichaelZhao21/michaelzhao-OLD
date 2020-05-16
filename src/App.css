@@ -7,11 +7,24 @@
 
 .navbar {
   padding: 2%;
+  height: 10vh;
+}
+
+.logo {
+  height: 10vh;
+
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: inherit;
 }
 
 .menu-item {
   display: inline;
-  padding-right: 10%;
+
 }
 
 a {

@@ -12,24 +12,30 @@ import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 
 import './App.css'
+import logo from './logo.svg'
 
 export default function App() {
   return (
     <Router>
       <div className="App-header">
         <div className="navbar">
-          <div className="menu-item">
-            <Link to="/">Home</Link>
-          </div>
-          <div className="menu-item">
-            <Link to="/about">About</Link>
-          </div>
-          <div className="menu-item">
-            <Link to="/projects">Projects</Link>
-          </div>
-          <div className="menu-item">
-            <Link to="/blog">Blog</Link>
-          </div>
+          <ul className="menu">
+            <li className="menu-item">
+            <img src={logo} className="logo" alt="logo"></img>
+            </li>
+            <li className="menu-item">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/blog">Blog</Link>
+            </li>
+          </ul>
         </div>
 
         <Switch>
