@@ -1,14 +1,14 @@
 import React from 'react';
 import './Main.css';
-import corner from '../graphics/corner.svg'
+import building from '../graphics/building.svg'
 
 class Main extends React.Component {
 	render() {
 		return (
 			<div className="Main">
-				<img src={corner} className="Corner" alt=""></img>
+				<img src={building} className="Corner" alt=""></img>
 				<div className="Name">
-					Michael Zhao
+					Michael<br/>Zhao
 				</div>
 			</div>
 		)
