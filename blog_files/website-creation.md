@@ -112,3 +112,16 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 ### Changes
 
 - Added new favicon
+- Fixed menu a little?
+
+### Design
+
+- [Website Inspiration](https://www.inboda.com/)
+- [Blog Inspiration](http://minimalmonkey.com/)
+
+### TODO
+
+- CHANGE MENU TO FLEXBOX
+    - [Responsive navbar :OOOO](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp)
+- REACT BOOTSTRAP (already installed)
+    - [Getting Started](https://react-bootstrap.github.io/getting-started/introduction)

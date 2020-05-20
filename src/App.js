@@ -19,11 +19,11 @@ export default function App() {
     <Router>
       <div className="App-header">
         <div className="navbar">
-          <img src={logo} className="logo" alt="logo"></img>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/blog">Blog</Link>
+          <img src={logo} className="logo menu-item" alt="logo"></img>
+          <Link to="/" className="menu-item">Home</Link>
+          <Link to="/about" className="menu-item">About</Link>
+          <Link to="/projects" className="menu-item">Projects</Link>
+          <Link to="/blog" className="menu-item">Blog</Link>
         </div>
 
         <Switch>
