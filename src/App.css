@@ -1,13 +1,15 @@
-.App-header {
-  background-color: #121212;
+.app-content {
   min-height: 100vh;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 
 .navbar {
+  display: fixed;
+  bottom: 0;
   padding: 2%;
-  height: 10vh;
+  height: 4vh;
+  background-color: transparent;
 }
 
 .logo {

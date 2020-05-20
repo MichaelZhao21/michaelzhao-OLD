@@ -17,7 +17,7 @@ import logo from './icon.png'
 export default function App() {
   return (
     <Router>
-      <div className="App-header">
+      <div className="app-content">
         <div className="navbar">
           <img src={logo} className="logo menu-item" alt="logo"></img>
           <Link to="/" className="menu-item">Home</Link>

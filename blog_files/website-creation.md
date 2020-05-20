@@ -125,3 +125,7 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
     - [Responsive navbar :OOOO](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp)
 - REACT BOOTSTRAP (already installed)
     - [Getting Started](https://react-bootstrap.github.io/getting-started/introduction)
+
+### RADICAL CHANGES!!!
+
+I'm using a photo [by JOHN TOWNER on Unsplash](https://unsplash.com/photos/JgOeRuGD_Y4)
