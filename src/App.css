@@ -17,14 +17,14 @@
 
 .menu {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: inherit;
+  display: inline;
+  /* text-align: center; */
 }
 
 .menu-item {
   display: inline;
-
+  padding: 0px 2vw 0px 2vw;
+  vertical-align: 80%;
 }
 
 a {

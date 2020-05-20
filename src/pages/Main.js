@@ -8,7 +8,7 @@ class Main extends React.Component {
 			<div className="Main">
 				<img src={building} className="Corner" alt=""></img>
 				<div className="Name">
-					Michael<br/>Zhao
+					<b>Michael<br/>Zhao</b>
 				</div>
 			</div>
 		)

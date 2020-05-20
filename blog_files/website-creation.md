@@ -93,3 +93,16 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
     - favicon.ico
     - manifest.json
 - Create framework for blog
+
+## 5/17/20
+
+### Research
+
+- [Add sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet)
+- [Add bootstrap](https://create-react-app.dev/docs/adding-bootstrap/#using-a-custom-theme)
+- [Theming with bootstrap](https://getbootstrap.com/docs/4.4/getting-started/theming/)
+
+### Domain Name Ideas (Avaliable)
+
+- michaelzhao.xyz (GoDaddy - $15/yr)
+- mikeyz.com (Google Domains - $12/yr)

@@ -21,7 +21,7 @@ export default function App() {
         <div className="navbar">
           <ul className="menu">
             <li className="menu-item">
-            <img src={logo} className="logo" alt="logo"></img>
+              <img src={logo} className="logo" alt="logo"></img>
             </li>
             <li className="menu-item">
               <Link to="/">Home</Link>
