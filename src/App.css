@@ -11,7 +11,7 @@
 }
 
 .logo {
-  height: 10vh;
+  height: 5vh;
 
 }
 
@@ -21,7 +21,7 @@
   /* text-align: center; */
 }
 
-.menu-item {
+Link {
   display: inline;
   padding: 0px 2vw 0px 2vw;
   vertical-align: 80%;

@@ -106,3 +106,9 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 
 - michaelzhao.xyz (GoDaddy - $15/yr)
 - mikeyz.com (Google Domains - $12/yr)
+
+## 5/20/20
+
+### Changes
+
+- Added new favicon
