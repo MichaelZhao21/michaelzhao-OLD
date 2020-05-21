@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 
 import Main from './pages/Main';
 import About from './pages/About';
@@ -14,9 +9,9 @@ import Blog from './pages/Blog';
 import './App.css'
 import logo from './icon.png'
 
-export default function App() {
+const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="app-content">
         <div className="navbar">
           <img src={logo} className="logo menu-item" alt="logo"></img>
@@ -41,6 +36,8 @@ export default function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
+
+export default App;

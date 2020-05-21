@@ -118,6 +118,7 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 
 - [Website Inspiration](https://www.inboda.com/)
 - [Blog Inspiration](http://minimalmonkey.com/)
+- I'm using a photo [by JOHN TOWNER on Unsplash](https://unsplash.com/photos/JgOeRuGD_Y4)
 
 ### TODO
 
@@ -126,6 +127,11 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 - REACT BOOTSTRAP (already installed)
     - [Getting Started](https://react-bootstrap.github.io/getting-started/introduction)
 
-### RADICAL CHANGES!!!
+## 5/21/20
 
-I'm using a photo [by JOHN TOWNER on Unsplash](https://unsplash.com/photos/JgOeRuGD_Y4)
+### Complete Overhaul :DDD
+
+- Background color for landing page: #fee7ea
+- LOVE [THIS](http://seanhalpin.io/) WEBSITE
+- I am using React-Bootstrap and using this [example](https://codesandbox.io/s/github/react-bootstrap/code-sandbox-examples/tree/master/basic-react-router?file=/src/App.js:701-960) to create my page :))
+- Time to learn about [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)!!!!
