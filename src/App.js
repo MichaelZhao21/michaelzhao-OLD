@@ -6,7 +6,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 
-import './App.css'
+import './App.scss'
 import logo from './icon.png'
 
 const App = () => {

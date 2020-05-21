@@ -1,5 +1,5 @@
 import React from 'react';
-import './Main.css';
+import './Main.scss';
 import background from '../graphics/john-towner.jpg'
 
 class Main extends React.Component {
