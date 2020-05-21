@@ -1,5 +1,5 @@
 import React from 'react';
-import './Blog.sscss';
+import './Blog.scss';
 
 class Blog extends React.Component {
 	render() {

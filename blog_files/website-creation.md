@@ -135,3 +135,5 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 - LOVE [THIS](http://seanhalpin.io/) WEBSITE
 - I am using React-Bootstrap and using this [example](https://codesandbox.io/s/github/react-bootstrap/code-sandbox-examples/tree/master/basic-react-router?file=/src/App.js:701-960) to create my page :))
 - Time to learn about [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)!!!!
+- We need ANOTHER library: react-router-bootstrap omggggg
+- Links + Navbar: this helpful [reference](https://serverless-stack.com/chapters/adding-links-in-the-navbar.html)
