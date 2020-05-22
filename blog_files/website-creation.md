@@ -138,3 +138,7 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 - We need ANOTHER library: react-router-bootstrap omggggg
 - Links + Navbar: this helpful [reference](https://serverless-stack.com/chapters/adding-links-in-the-navbar.html)
 - Text color: #F9C784 or #86BBD8
+- **FINAL BACKGROUND COLOR**: #F9EACD
+- **FINAL FOREGROUND COLOR**: #EA7526
+- **Font**: [Titillium Web](https://fonts.google.com/specimen/Titillium+Web)
+
