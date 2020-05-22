@@ -1,21 +1,31 @@
-$primary: #fee7ea;
-
+$primary: #F9EACD;
+$secondary: #EA7526;
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+$my-font: 'Titillium Web', $font-family-sans-serif;
 
 .main {
   background-color: $primary;
+  font-family: $my-font;
+}
+
+.navbar {
+  padding: 4vh;
 }
 
 .brand {
-  color: black;
+  color: $secondary;
+  font-size: 4vh;
 }
 
 .nav-item {
-  padding: 1vh 3vw 1vh 3vw;
-  color: black;
+  padding: 2vh 1vw 2vh 1vw;
+  color: $secondary;
+  font-size: x-large;
 }
 
-// temp
-div {
-  color: black;
+.custom-container {
+  width: auto;
+  margin-left: 20%;
+  margin-right: 20%;
 }

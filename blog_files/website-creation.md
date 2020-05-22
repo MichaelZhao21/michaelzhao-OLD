@@ -141,4 +141,3 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 - **FINAL BACKGROUND COLOR**: #F9EACD
 - **FINAL FOREGROUND COLOR**: #EA7526
 - **Font**: [Titillium Web](https://fonts.google.com/specimen/Titillium+Web)
-
