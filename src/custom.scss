@@ -1,0 +1,18 @@
+$primary: #F9EACD;
+$secondary: #EA7526;
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+$my-font: 'Titillium Web', $font-family-sans-serif;
+
+.custom-container {
+    width: auto;
+    height: 100%;
+  }
+  
+  @include media-breakpoint-up(md) {
+    .custom-container {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }

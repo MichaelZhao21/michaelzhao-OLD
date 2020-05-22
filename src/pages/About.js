@@ -8,7 +8,7 @@ class About extends React.Component {
 	render() {
 		return (
 			<Container fluid>
-				<h1>About Me!</h1>
+				<h1 className="display-1">About Me!</h1>
 				<Jumbotron className="intro">
 					<p>Hey! My name is Michael Zhao and I am cool hehe :DD</p>
 				</Jumbotron>

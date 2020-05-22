@@ -15,17 +15,14 @@ import Container from 'react-bootstrap/Container';
 
 const App = () => {
   return (
-    <Container className="custom-container" flex="md">
-      <BrowserRouter>
+    <BrowserRouter>
+      <Container className="custom-container" flex="md">
         <Navbar variant="primary" fluid collapseOnSelect>
           <Navbar.Brand>
             <Link to="/" className="brand">Michael Zhao</Link>
           </Navbar.Brand>
-          <Nav className="ml-auto" defaultActiveKey="/">
+          <Nav className="ml-auto" defaultActiveKey="">
             <Navbar.Collapse>
-              <LinkContainer to="/">
-                <NavItem>Home</NavItem>
-              </LinkContainer>
               <LinkContainer to="/about">
                 <NavItem>About</NavItem>
               </LinkContainer>
@@ -38,24 +35,24 @@ const App = () => {
             </Navbar.Collapse>
           </Nav>
         </Navbar>
-        <div className="content">
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/blog">
-              <Blog />
-            </Route>
-            <Route path="/">
-              <Main name="Michael Zhao" />
-            </Route>
-          </Switch>
-        </div>
-      </BrowserRouter >
-    </Container>
+      </Container>
+      <div className="content">
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/">
+            <Main name="Michael Zhao" />
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter >
   );
 }
 

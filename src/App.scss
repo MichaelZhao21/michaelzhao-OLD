@@ -1,9 +1,4 @@
-$primary: #F9EACD;
-$secondary: #EA7526;
-@import "~bootstrap/scss/bootstrap";
-
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
-$my-font: 'Titillium Web', $font-family-sans-serif;
+@import "./custom.scss";
 
 html, body {
   height: 100%;
@@ -11,7 +6,7 @@ html, body {
 }
 
 #root {
-  height: 100%;
+  min-height: 100%;
   background-color: $primary;
   font-family: $my-font;
 }
@@ -33,17 +28,9 @@ html, body {
   padding: 2vh 1vw 2vh 1vw;
   color: $secondary;
   font-size: x-large;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
-.custom-container {
-  width: auto;
-  height: 100%;
-}
-
-@include media-breakpoint-up(md) {
-  .custom-container {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
+.active.nav-item {
+  color: black;
 }

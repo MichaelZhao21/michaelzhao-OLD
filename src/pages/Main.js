@@ -14,7 +14,7 @@ class Main extends React.Component {
 
 	render() {
 		return (
-			<Container fluid>
+			<Container className="custom-container" fluid>
 				<Row>
 					<div className="main-content">
 						<Name className="name" onClick={this.handleClick} />

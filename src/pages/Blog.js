@@ -8,9 +8,6 @@ class Blog extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {markdown:null}
-	}
-
-	componentWillMount() {
 		fetch(path).then(response => response.text()).then(text => {
 			this.setState({markdown: text})
 		});
