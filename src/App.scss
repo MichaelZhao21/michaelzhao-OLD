@@ -15,6 +15,10 @@ html, body {
   font-family: $my-font;
 }
 
+.brand:hover {
+  text-decoration: none;
+}
+
 .navbar {
   padding: 4vh;
 }
@@ -28,6 +32,7 @@ html, body {
   padding: 2vh 1vw 2vh 1vw;
   color: $secondary;
   font-size: x-large;
+  cursor: pointer;
 }
 
 .custom-container {

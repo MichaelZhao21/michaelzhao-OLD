@@ -21,7 +21,7 @@ const App = () => {
           <Navbar.Brand>
             <Link to="/" className="brand">Michael Zhao</Link>
           </Navbar.Brand>
-          <Nav className="ml-auto" activeKey="/">
+          <Nav className="ml-auto" defaultActiveKey="/">
             <Navbar.Collapse>
               <LinkContainer to="/">
                 <NavItem>Home</NavItem>
