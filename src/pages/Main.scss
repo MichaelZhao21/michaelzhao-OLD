@@ -1,8 +1,19 @@
 @import "../App.scss";
 
-.main-content {
-    height: 100vh;
+.content, .container-fluid, .main-content {
+    height: 100%;
 }
 
 .name {
+    transform: translate(0, 10vh);
+    scale: 60%;
+}
+
+.name:hover {
+    cursor: pointer;
+    
+    .cls-1 {
+        fill: #F09544;
+        stroke: $secondary;
+    }
 }
