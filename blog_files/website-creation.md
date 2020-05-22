@@ -137,3 +137,4 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 - Time to learn about [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)!!!!
 - We need ANOTHER library: react-router-bootstrap omggggg
 - Links + Navbar: this helpful [reference](https://serverless-stack.com/chapters/adding-links-in-the-navbar.html)
+- Text color: #F9C784???
