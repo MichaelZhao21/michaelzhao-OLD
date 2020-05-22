@@ -1,3 +1,5 @@
-div {
-    color: white;
+@import "../App.scss";
+
+.intro {
+    color: $secondary; 
 }
