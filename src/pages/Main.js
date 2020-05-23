@@ -13,7 +13,7 @@ class Main extends React.Component {
 	render() {
 		return (
 			<Container className="custom-container main" fluid>
-				<h1 className="display-1 main-greeting">Hi! I'm Michael :)</h1>
+				<h1 className="display-1 main-greeting" onClick={this.handleClick}>Hi! I'm Michael :)</h1>
 			</Container>
 		)
 	}

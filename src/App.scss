@@ -1,6 +1,7 @@
 @import "./custom.scss";
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -13,26 +14,61 @@ html, body {
 
 .logo {
   height: 3.5rem;
-  margin-left: 4rem;
+  margin-left: 1rem;
+  
+  .cls-1 {
+    transition: 0.3s;
+  }
 }
 
-.brand, .brand:focus, .brand:hover {
+.logo:hover {
+  .cls-1 {
+    fill: $primary-dark;
+  }
+}
+
+.brand,
+.brand:focus,
+.brand:hover {
   outline: 0 !important;
-  border:0 none !important;
+  border: 0 none !important;
   text-decoration: none;
 }
 
 .navbar {
-  padding: 1.5rem;
+  padding: 1.5rem 0 1.5rem 0;
 }
 
 .nav-item {
   padding: 0 1.5rem 0 1.5rem;
   color: $secondary;
-  font-size: x-large;
-  cursor: pointer; 
+  font-size: $font-size-lg;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  color: $primary-dark-1;
 }
 
 .active.nav-item {
   color: $secondary-dark;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar {
+    padding: 1.5rem 12.5rem 1.5rem 12.5rem;
+  }
+  .logo {
+    margin-left: 2rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar {
+    padding: 1.5rem 27.5rem 1.5rem 27.5rem;
+  }
+  .logo {
+    margin-left: 4rem;
+  }
 }
