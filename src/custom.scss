@@ -1,20 +1,27 @@
-$primary: #F9EACD;
-$primary-dark: #F09544;
-$secondary: #EA7526;
-$secondary-dark: #852F0F;
+$primary: #f9eacd;
+$primary-dark: #f09544;
+$secondary: #ea7526;
+$secondary-dark: #852f0f;
 @import "~bootstrap/scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
-$my-font: 'Titillium Web', $font-family-sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+$main-text-font: "Titillium Web", $font-family-sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+$title-font: 'Shadows Into Light Two', cursive;
 
 .custom-container {
-    width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
+}
+
+@include media-breakpoint-up(md) {
+  .custom-container {
+    margin-left: 20%;
+    margin-right: 20%;
   }
-  
-  @include media-breakpoint-up(md) {
-    .custom-container {
-      margin-left: 20%;
-      margin-right: 20%;
-    }
-  }
+}
+
+a {
+  color: black;
+}

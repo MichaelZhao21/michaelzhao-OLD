@@ -1,9 +1,17 @@
 @import "../App.scss";
 
-.intro {
-    color: $secondary; 
+.about-title {
+    color: $secondary;
+    text-align: center;
+    font-family: $title-font;
+    margin-bottom: 6vh;
 }
 
-.about-color {
-    color: $secondary;
+.intro.jumbotron {
+    background-color: transparent;
+    border: solid 2px $secondary;
+    border-radius: 10px;
+    color: $black;
+    padding: 2rem 2rem;
+    font-size: $font-size-lg;
 }

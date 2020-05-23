@@ -152,3 +152,15 @@ I added very primitive CSS (lol super messy) and added my own svg graphic for a 
 
 - Create graphic for homescreen!!!
 - Create logo!!!
+
+## 5/23/20
+
+### New Font :OOO
+
+I want to look for a more cursive, [handwriting](https://fonts.google.com/?category=Handwriting&preview.text_type=custom&preview.text=The+quick+brown+fox+jumps+over+the+lazy+dog.) font for my titles hehe
+
+- [Shadows Into Light Two](https://fonts.google.com/specimen/Shadows+Into+Light+Two?category=Handwriting&preview.text_type=custom&preview.text=The+quick+brown+fox+jumps+over+the+lazy+dog.) - FINAL CHOICE
+
+- [Calligraffiti](https://fonts.google.com/specimen/Calligraffitti?category=Handwriting&preview.text_type=custom&preview.text=The+quick+brown+fox+jumps+over+the+lazy+dog.&sidebar.open&selection.family=Calligraffitti) - decent but too broken up for a nice style
+
+- [Short Stack](https://fonts.google.com/specimen/Short+Stack?category=Handwriting&preview.text_type=custom&preview.text=The+quick+brown+fox+jumps+over+the+lazy+dog.&query=short+stack) - this one rly cute hehe
