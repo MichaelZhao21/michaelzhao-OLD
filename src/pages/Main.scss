@@ -3,13 +3,17 @@
 .name {
     transform: translate(0, 10vh);
     scale: 60%;
+    fill: $secondary;
+    stroke: $secondary-dark;
+    stroke-width: 3px;
+    stroke-miterlimit:10;
 }
 
 .name:hover {
     cursor: pointer;
     
     .cls-1 {
-        fill: #F09544;
+        fill: $primary-dark;
         stroke: $secondary;
     }
 }

@@ -11,6 +11,11 @@ html, body {
   font-family: $my-font;
 }
 
+.logo {
+  height: 10vh;
+  margin-left: 4vw;
+}
+
 .brand:hover {
   text-decoration: none;
 }
@@ -32,5 +37,5 @@ html, body {
 }
 
 .active.nav-item {
-  color: black;
+  color: $secondary-dark;
 }

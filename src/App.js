@@ -5,6 +5,7 @@ import Main from './pages/Main';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
+import Logo from './logo.png';
 
 import './App.scss'
 import Navbar from 'react-bootstrap/Navbar';
@@ -19,7 +20,9 @@ const App = () => {
       <Container className="custom-container" flex="md">
         <Navbar variant="primary" fluid collapseOnSelect>
           <Navbar.Brand>
-            <Link to="/" className="brand">Michael Zhao</Link>
+            <Link to="/" className="brand">
+              <img className="logo" src={Logo} alt="Michael Zhao"></img>
+            </Link>
           </Navbar.Brand>
           <Nav className="ml-auto" defaultActiveKey="">
             <Navbar.Collapse>
