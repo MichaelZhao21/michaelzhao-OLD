@@ -12,30 +12,22 @@ html, body {
 }
 
 .logo {
-  height: 10vh;
-  margin-left: 4vw;
+  height: 3.5rem;
+  margin-left: 4rem;
 }
 
-.brand:hover {
+.brand, .brand:focus, .brand:hover {
+  outline: 0 !important;
+  border:0 none !important;
   text-decoration: none;
 }
 
-.brand, .brand:focus{
-  outline: 0 !important;
-  border:0 none !important;
-}
-
 .navbar {
-  padding: 4vh;
-}
-
-.brand {
-  color: $secondary;
-  font-size: 4vh;
+  padding: 1.5rem;
 }
 
 .nav-item {
-  padding: 2vh 1vw 2vh 1vw;
+  padding: 0 1.5rem 0 1.5rem;
   color: $secondary;
   font-size: x-large;
   cursor: pointer; 

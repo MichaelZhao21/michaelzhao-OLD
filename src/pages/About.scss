@@ -4,13 +4,13 @@
     color: $secondary;
     text-align: center;
     font-family: $title-font;
-    margin-bottom: 6vh;
+    margin-bottom: 3rem;
 }
 
 .intro.jumbotron {
     background-color: transparent;
-    border: solid 2px $secondary;
-    border-radius: 10px;
+    border: solid .2rem $secondary;
+    border-radius: 2rem;
     color: $black;
     padding: 2rem 2rem;
     font-size: $font-size-lg;

@@ -2,6 +2,7 @@ $primary: #f9eacd;
 $primary-dark: #f09544;
 $secondary: #ea7526;
 $secondary-dark: #852f0f;
+$third: #FFAA55;
 @import "~bootstrap/scss/bootstrap";
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
@@ -17,8 +18,8 @@ $title-font: 'Shadows Into Light Two', cursive;
 
 @include media-breakpoint-up(md) {
   .custom-container {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 }
 
