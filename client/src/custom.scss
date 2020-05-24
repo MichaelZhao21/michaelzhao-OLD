@@ -32,5 +32,32 @@ $title-font: 'Shadows Into Light Two', cursive;
 }
 
 a {
-  color: black;
+  color: $secondary-dark;
+}
+
+a:hover {
+  color: $secondary;
+  text-decoration: none;
+}
+
+p::selection, a::selection, h1::selection {
+  background: $primary-dark;
+  color: $white;
+}
+
+@mixin load-fade($name, $time) {
+  animation: $name ease $time;
+} 
+
+@mixin load-fade-frames($name, $height) {
+  
+  @keyframes #{$name} {
+    0% {
+        opacity: 0;
+        transform: translate(0, $height);
+    }
+    100% {
+        opacity: 1;
+    }
+  }
 }
