@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Matter from "matter-js";
+import './Scene.scss';
 
 class Scene extends React.Component {
     constructor(props) {
