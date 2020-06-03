@@ -43,6 +43,23 @@ p {
     margin: 1em 2em 1em 2em;
 }
 
+ul {
+    padding: 0 1em 0 1em;
+    margin: 1em;
+}
+
+.link {
+    font-size: 1.4em;
+    margin: 1em 2em 1em 2em;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: #777777;
+}
+
 .caption {
     font-size: .9em;
     margin: 0 2em 0 2em;

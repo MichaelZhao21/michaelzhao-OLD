@@ -11,6 +11,7 @@ import WhitePrivilege from './pages/WhitePrivilege';
 import Media from './pages/Media';
 import Pride from './pages/Pride';
 import ToWatch from './pages/ToWatch';
+import CurrentEvents from './pages/CurrentEvents';
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
         <Switch>
           <Route path="/help">
             <Help />
+          </Route>
+          <Route path="/current-events">
+            <CurrentEvents />
           </Route>
           <Route path="/black-rights">
             <BlackRights />
