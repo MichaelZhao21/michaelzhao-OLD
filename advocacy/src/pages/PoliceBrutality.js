@@ -14,7 +14,9 @@ class PoliceBrutality extends React.Component {
                 </div>
                 <div className="container">
                     <p>Police Brutality</p>
-                    <a href={Case}>Derek Chauvin's Case 5/29/2020</a>
+                    <p>
+                        <a href={Case}>Derek Chauvin's Case 5/29/2020</a>
+                    </p>
                     <Footer credit="Vox from Mostafa Bassim/Anadolu Agency via Getty Images" link="https://www.vox.com/science-and-health/2020/6/1/21276828/pandemic-protests-police-public-health-black-lives-matter"></Footer>
                 </div>
             </div>
