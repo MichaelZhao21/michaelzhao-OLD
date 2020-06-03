@@ -1,0 +1,101 @@
+html, body, #root {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 50%;
+    min-height: 100%;
+    margin: auto;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: black;
+    filter: drop-shadow(0 0 .5em #aaaaaa);
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    padding: 4em 0 4em 0;
+    text-align: center;
+    background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url("../pictures/protests.jpg");
+    background-size: cover;
+    filter: drop-shadow(0 0 .5em #aaaaaa);
+}
+
+h1 {
+    margin: 0;
+    font-size: 8em;
+    color: #dddddd;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+    margin: .8em 0 .4em 0;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.4em;
+    margin: 2em;
+}
+
+.section-button {
+    text-decoration: none;
+    background-color: #dddddd;
+    color: black;
+    padding: 1em;
+    width: 80%;
+    margin: .5em auto .5em auto;
+    font-weight: 300;
+    font-size: 1.75em;
+    transition: 0.3s;
+}
+
+.section-button:hover {
+    background-color: #aaaaaa;
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+        margin: 1em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        margin: 0 .5em 0 .5em;
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+}

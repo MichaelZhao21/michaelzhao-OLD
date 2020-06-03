@@ -1,12 +1,48 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-
 import './App.css';
 
-function App() {
+import Home from './pages/Home';
+import BlackRights from './pages/BlackRights';
+import PoliceBrutality from './pages/PoliceBrutality';
+import OnlineProtests from './pages/OnlineProtests';
+import WhitePrivilege from './pages/WhitePrivilege';
+import Media from './pages/Media';
+import Pride from './pages/Pride';
+import ToWatch from './pages/ToWatch';
+
+const App = () => {
   return (
     <BrowserRouter>
-    
+      <Link className="home-button" to="/">Back to Home</Link>
+      <div className="app">
+        <Switch>
+          <Route path="/black-rights">
+            <BlackRights />
+          </Route>
+          <Route path="/police-brutality">
+            <PoliceBrutality />
+          </Route>
+          <Route path="/online-protests">
+            <OnlineProtests />
+          </Route>
+          <Route path="/white-privilege">
+            <WhitePrivilege />
+          </Route>
+          <Route path="/media">
+            <Media />
+          </Route>
+          <Route path="/pride">
+            <Pride />
+          </Route>
+          <Route path="/to-watch">
+            <ToWatch />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }
