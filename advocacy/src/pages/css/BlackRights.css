@@ -1,0 +1,5 @@
+.blm-header {
+    background: linear-gradient(#000000b3, #000000b3), url("../../files/blm.jpg");
+    background-size: cover;
+    background-position-y: 30%;
+}

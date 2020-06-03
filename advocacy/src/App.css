@@ -6,11 +6,12 @@
 }
 
 .home-button {
+  z-index: 100;
   position: fixed;
-  bottom: 0.5em;
+  top: 2em;
   left: 2em;
   text-decoration: none;
-  color: black;
+  color: #aaaaaa;
   font-weight: 700;
   font-size: 1.1em;
   -webkit-user-select: none; /* Chrome/Safari */
