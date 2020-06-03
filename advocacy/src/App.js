@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/Home';
+import Help from './pages/Help';
 import BlackRights from './pages/BlackRights';
 import PoliceBrutality from './pages/PoliceBrutality';
 import OnlineProtests from './pages/OnlineProtests';
@@ -17,6 +18,9 @@ const App = () => {
       <Link className="home-button" to="/">Back to Home</Link>
       <div className="app">
         <Switch>
+          <Route path="/help">
+            <Help />
+          </Route>
           <Route path="/black-rights">
             <BlackRights />
           </Route>

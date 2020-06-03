@@ -1,0 +1,8 @@
+.home-header {
+    background: linear-gradient(#000000b3, #000000b3), url("../../files/protests.jpg");
+    background-size: cover;
+}
+
+.car-pic {
+    width: 100%;
+}

@@ -1,0 +1,5 @@
+.media-header {
+    background: linear-gradient(#000000b3, #000000b3), url("../../files/newspaper.jpg");
+    background-size: cover;
+    background-position-y: center;
+}

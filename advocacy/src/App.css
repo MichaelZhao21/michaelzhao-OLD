@@ -7,12 +7,15 @@
 
 .home-button {
   position: fixed;
-  bottom: .5em;
+  bottom: 0.5em;
   left: 2em;
   text-decoration: none;
   color: black;
   font-weight: 700;
   font-size: 1.1em;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
 }
 
 @media only screen and (max-width: 1200px) {
