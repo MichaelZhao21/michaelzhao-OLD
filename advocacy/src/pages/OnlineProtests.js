@@ -11,7 +11,7 @@ class OnlineProtests extends React.Component {
                 <div className="header online-header">
                     <h1>Online Protests and COVID-19</h1>
                 </div>
-                <div class="container">
+                <div className="container">
                     <p>Online Protests and COVID-19</p>
                     <Footer credit="rtrfm.com" link="https://rtrfm.com.au/story/social-activism/"></Footer>
                 </div>

@@ -11,7 +11,7 @@ class Pride extends React.Component {
                 <div className="header pride-header">
                     <h1>Pride and Pridefall</h1>
                 </div>
-                <div class="container">
+                <div className="container">
                     <p>Pride and Pridefall</p>
                     <Footer credit="Mercedes Mehling on Unsplash" link="https://unsplash.com/photos/7J7x8HLXQKA"></Footer>
                 </div>

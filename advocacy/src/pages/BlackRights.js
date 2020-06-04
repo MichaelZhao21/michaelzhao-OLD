@@ -15,7 +15,7 @@ class BlackRights extends React.Component {
                 <div className="header blm-header">
                     <h1>Black Rights</h1>
                 </div>
-                <div class="container">
+                <div className="container">
                     <h2>The Black Lives Matter Movement</h2>
                     <img className="doc-img blm-logo" src={BlmLogo} alt="Black Lives Matter Logo"></img>
                     <p className="img-caption">The Black Lives Matter Logo from blacklivesmatter.com</p>

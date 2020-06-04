@@ -11,10 +11,10 @@ class WhitePrivilege extends React.Component {
                 <div className="header white-header">
                     <h1>White Privilege</h1>
                 </div>
-                <div class="container">
+                <div clasNames="container">
                     <h2>TRUMP</h2>
                     <div className="video">
-                        <iframe title="New York Times Video - Embed Player" width="480" height="321" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" id="nyt_video_player" src="https://www.nytimes.com/video/players/offsite/index.html?videoId=100000007168615"></iframe>"
+                        <iframe className="nyt-vid" title="New York Times Video - Embed Player" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" id="nyt_video_player" src="https://www.nytimes.com/video/players/offsite/index.html?videoId=100000007168615"></iframe>
                     </div>
                     <Footer credit="WABE: Where ATL meets NPR" link="https://www.wabe.org/he-did-not-pray-fallout-grows-from-trump-s-photo-op-at-st-john-s-church/"></Footer>
                 </div>

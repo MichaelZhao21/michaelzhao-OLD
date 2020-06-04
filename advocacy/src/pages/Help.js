@@ -12,7 +12,7 @@ class Help extends React.Component {
                 <div className="header help-header">
                     <h1>How to Help</h1>
                 </div>
-                <div class="container">
+                <div className="container">
                     <h2 className="colored-section">Petitions to Sign</h2>
 
                     <h3>Change.org</h3>
@@ -61,7 +61,7 @@ class Help extends React.Component {
 
                     <h2 className="colored-section">Going to Protest</h2>
                     <InstagramEmbed className="inst" url='https://instagr.am/p/CA0jzCdg_vR' maxWidth={1000} hideCaption={false} containerTagName='div'></InstagramEmbed>
-                    <a className="link link-list" href="https://www.centraltrack.com/things-to-do-in-dallas-go-to-a-protest/">Protests happening in and around Dallas NOW</a>
+                    <a className="link link-list" href="https://www.centraltrack.com/things-to-do-in-dallas-go-to-a-protest/">Protests happening in and around Dallas NOW [CentralTrack]</a>
                     <InstagramEmbed className="inst" url='https://instagr.am/p/CA9cfFuptEz' maxWidth={1000} hideCaption={true} containerTagName='div'></InstagramEmbed>
 
                     <h2 className="colored-section">Other Resources</h2>
