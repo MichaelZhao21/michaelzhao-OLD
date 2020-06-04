@@ -54,16 +54,21 @@ ul {
     margin: 1em;
 }
 
+.left {
+    text-align: left;
+}
+
 .link {
     font-size: 1.4em;
     margin: 1em 2em 1em 2em;
     text-decoration: none;
-    color: black;
+    color: #7c5414;
     transition: 0.2s;
 }
 
 .link:hover {
-    color: #777777;
+    color: #523610;
+    filter: drop-shadow(0 0 .01em #492c0a);
 }
 
 .link-list {

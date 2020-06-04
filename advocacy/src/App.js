@@ -12,6 +12,7 @@ import Media from './pages/Media';
 import Pride from './pages/Pride';
 import ToWatch from './pages/ToWatch';
 import CurrentEvents from './pages/CurrentEvents';
+import GeorgeProtests from './pages/GeorgeProtests';
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
           </Route>
           <Route path="/current-events">
             <CurrentEvents />
+          </Route>
+          <Route path="/george-floyd-protests">
+            <GeorgeProtests />
           </Route>
           <Route path="/black-rights">
             <BlackRights />

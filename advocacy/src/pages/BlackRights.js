@@ -12,7 +12,7 @@ class BlackRights extends React.Component {
                     <h1>Black Rights</h1>
                 </div>
                 <div class="container">
-                    <p></p>
+                    <h2>The Black Lives Matter Movement</h2>
                     <Footer credit="ABS news" link="https://abcnews.go.com/Politics/years-black-lives-matter-inspires-protest-movements/story?id=56702439"></Footer>
                 </div>
             </div>

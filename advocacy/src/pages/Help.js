@@ -24,7 +24,7 @@ class Help extends React.Component {
                     
                     <h3>Others</h3>
                     <a className="link link-list" href="https://blacklivesmatter.com/defundthepolice/">BLM: #Defund the Police</a>
-                    <a className="link link-list" href="https://www.naacp.org/campaigns/we-are-done-dying/">NAACP We are Done Dying Campagin</a>
+                    <a className="link link-list" href="https://www.naacp.org/campaigns/we-are-done-dying/">NAACP: We are Done Dying Campagin</a>
 
                     <h2>Places to Donate</h2>
                     <h3>Lists</h3>
