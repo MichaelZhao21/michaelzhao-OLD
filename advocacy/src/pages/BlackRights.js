@@ -52,6 +52,7 @@ class BlackRights extends React.Component {
 
                     <h2>Sources for this Section</h2>
                     <p className="citation">Black Lives Matter. “Home.” Black Lives Matter, 31 May 2020, blacklivesmatter.com/.</p>
+                    <p className="citation">“BLM's #WhatMatters2020.” Black Lives Matter, 26 Feb. 2020, blacklivesmatter.com/what-matters-2020/.</p>
                     <p className="citation">DemCast Staff. “I Have Privilege as a White Person Because I Can Do All of These Things without Thinking Twice:” DemCast, 29 May 2020, demcastusa.com/2020/05/29/i-have-privilege-as-a-white-person-because-i-can-do-all-of-these-things-without-thinking-twice/.</p>
                     <p className="citation">NPR. “A Decade Of Watching Black People Die.” NPR, NPR, 30 May 2020, www.npr.org/2020/05/29/865261916/a-decade-of-watching-black-people-die.</p>
                     <Footer credit="ABS news" link="https://abcnews.go.com/Politics/years-black-lives-matter-inspires-protest-movements/story?id=56702439"></Footer>
