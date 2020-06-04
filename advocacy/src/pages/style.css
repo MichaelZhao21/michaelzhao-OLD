@@ -42,10 +42,16 @@ body,
     margin: 0 3em 1em 3em;
 }
 
+.instagram-media {
+    width: 100% !important;
+}
+
 .inst {
     width: 70%;
     margin: auto;
-    filter: drop-shadow(0 0 .5em #888888);
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.5em #888888);
 }
 
 h1 {
@@ -67,7 +73,9 @@ h3 {
     font-size: 2em;
 }
 
-p, pre, ul {
+p,
+pre,
+ul {
     font-size: 1.4em;
     margin: 0 2em 1em 2em;
     text-align: left;
@@ -84,11 +92,11 @@ li {
 
 pre {
     font-size: 1.2em;
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: pre-wrap; /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 .p {
@@ -113,7 +121,7 @@ ul {
 }
 
 .quote {
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-style: italic;
     font-weight: 600;
 }
@@ -186,12 +194,17 @@ ul {
         font-size: 5em;
     }
     h2 {
-        margin: 0.4em 0.2em 0.2em 0.2em;
+        margin: 0.4em 0.2em 0.5em 0.2em;
         font-size: 2em;
     }
-    p, pre, ul {
+    p,
+    pre,
+    ul {
         font-size: 1.2em;
         margin: 1em;
+    }
+    .inst {
+        filter: drop-shadow(0 0 0.2em #888888);
     }
 }
 
@@ -204,7 +217,9 @@ ul {
         margin: 0.4em 0.2em 0.2em 0.2em;
         font-size: 2em;
     }
-    p, pre, ul {
+    p,
+    pre,
+    ul {
         font-size: 0.5em;
     }
 }

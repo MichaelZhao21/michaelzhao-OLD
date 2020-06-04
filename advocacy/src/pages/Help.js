@@ -32,6 +32,7 @@ class Help extends React.Component {
                     <a className="link link-list" href="https://www.naacp.org/campaigns/we-are-done-dying/">NAACP: We are Done Dying Campagin</a>
                     <a className="link link-list" href="https://www.wecantbreathenational.org/">#WeCantBreathe</a>
                     <a className="link link-list" href="https://www.reclaimtheblock.org/home">TELL MINNEAPOLIS CITY COUNCIL TO DEFUND THE POLICE</a>
+                    <a className="link link-list" href="https://bit.ly/ourcityourfuture">People in Dallas: Our City, Our Future</a>
 
                     <h2 className="colored-section">Places to Donate</h2>
                     <h3>Lists</h3>
@@ -51,12 +52,17 @@ class Help extends React.Component {
                     <a className="link link-list" href="https://aapf.org/supportshn">#SayHerName - call attention to police violence against Black femmes</a>
                     <a className="link link-list" href="https://www.gofundme.com/f/justicefordavidmcatee">Justice for David McAtee (gofundme)</a>
 
+                    <h3>Charitable Causes</h3>
+                    <a className="link link-list" href="https://docs.google.com/forms/d/e/1FAIpQLSfIBESAr2BXHE4zMlhj2j4aOe_OYRQlrw7tcemfU51FSe6J8g/viewform">Stickers to Support BLM - fundraiser by UT BHSA</a>
+
                     <h3>Donating without Spending Money</h3>
                     <a className="link link-list" href="https://twitter.com/kookpics/status/1268534687112335361?s=21">Click on links to pages that earn money through clicks</a>
                     <a className="link link-list" href="https://www.youtube.com/watch?v=bCgLa25fDHM&t=3016s">Stream this video to generate ad revenue!</a>
 
                     <h2 className="colored-section">Going to Protest</h2>
-                    <InstagramEmbed className="inst" url='https://instagr.am/p/CA0jzCdg_vR' maxWidth={800} hideCaption={false} containerTagName='div'></InstagramEmbed>
+                    <InstagramEmbed className="inst" url='https://instagr.am/p/CA0jzCdg_vR' maxWidth={1000} hideCaption={false} containerTagName='div'></InstagramEmbed>
+                    <a className="link link-list" href="https://www.centraltrack.com/things-to-do-in-dallas-go-to-a-protest/">Protests happening in and around Dallas NOW</a>
+                    <InstagramEmbed className="inst" url='https://instagr.am/p/CA9cfFuptEz' maxWidth={1000} hideCaption={true} containerTagName='div'></InstagramEmbed>
 
                     <h2 className="colored-section">Other Resources</h2>
                     <a className="link link-list" href="https://docs.google.com/document/d/1qpn5fFrG4-FLfGo3cUsiwb7OvDnnL10uOnF50X-1v90/edit">List of Black-Owned Businesses to Support</a>
