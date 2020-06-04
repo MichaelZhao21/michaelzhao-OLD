@@ -43,7 +43,7 @@ class Help extends React.Component {
                     <a className="link link-list" href="https://www.gofundme.com/f/justice-for-regis">Justice For Regis (gofundme)</a>
 
                     <h2>Going to Protest</h2>
-                    <InstagramEmbed url='https://instagr.am/p/CA0jzCdg_vR' maxWidth={800} hideCaption={false} containerTagName='div'></InstagramEmbed>
+                    <InstagramEmbed className="inst" url='https://instagr.am/p/CA0jzCdg_vR' maxWidth={800} hideCaption={false} containerTagName='div'></InstagramEmbed>
 
                     <h2>Support</h2>
                     <a className="link link-list" href="https://docs.google.com/document/d/1qpn5fFrG4-FLfGo3cUsiwb7OvDnnL10uOnF50X-1v90/edit">List of Black-Owned Businesses</a>
