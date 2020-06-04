@@ -3,3 +3,20 @@
     background-size: cover;
     background-position-y: 30%;
 }
+
+.name-wall {
+    width: 80%;
+}
+
+.blm-logo {
+    width: 40%;
+}
+
+@media only screen and (max-width: 800px) {
+    .name-wall {
+        width: 95%;
+    }
+    .blm-logo {
+        width: 70%;
+    }
+}

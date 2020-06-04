@@ -28,10 +28,18 @@ body,
 }
 
 .doc-img {
-    margin: 0.5em 4em 0.5em 4em;
+    margin: 0.5em auto 0.5em auto;
     object-fit: scale-down;
-    height: 20em;
+    width: 70%;
     display: block;
+}
+
+.img-caption {
+    font-size: 1em;
+    text-align: center;
+    color: #484848;
+    font-weight: 300;
+    margin: 0 3em 1em 3em;
 }
 
 h1 {
@@ -42,7 +50,7 @@ h1 {
 }
 
 h2 {
-    margin: 0.8em 1em 0.4em 1em;
+    margin: 0.6em 1em 0.4em 1em;
     font-weight: 700;
     font-size: 3em;
 }
@@ -53,11 +61,19 @@ h3 {
     font-size: 2em;
 }
 
-p, pre {
+p, pre, ul {
     font-size: 1.4em;
     margin: 0 2em 1em 2em;
     text-align: left;
     font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    margin-top: 0 !important;
+}
+
+li {
+    margin-left: 2em;
 }
 
 pre {
@@ -71,6 +87,10 @@ pre {
 
 .p {
     text-indent: 2em;
+}
+
+.video {
+    margin: 1em 0 1em 0;
 }
 
 ul {
@@ -160,14 +180,12 @@ ul {
         font-size: 5em;
     }
     h2 {
+        margin: 0.4em 0.2em 0.2em 0.2em;
         font-size: 2em;
     }
-    p {
-        font-size: 1em;
+    p, pre, ul {
+        font-size: 1.2em;
         margin: 1em;
-    }
-    .doc-img {
-        height: 15em;
     }
 }
 
@@ -177,10 +195,10 @@ ul {
         font-size: 4em;
     }
     h2 {
-        margin: 0.8em 0.2em 0.4em 0.2em;
+        margin: 0.4em 0.2em 0.2em 0.2em;
         font-size: 2em;
     }
-    p {
-        font-size: 1em;
+    p, pre, ul {
+        font-size: 0.5em;
     }
 }

@@ -1,5 +1,4 @@
-const Poem = `
-I can go birding (#ChristianCooper)
+const Poem = `I can go birding (#ChristianCooper)
 I can go jogging (#AmaudArbery)
 I can relax in the comfort of my own home (#bothamjean and #AtatianaJefferson)
 I can ask for help after being in a car crash (#JonathanFerrell and #RenishaMcBride)
@@ -30,7 +29,6 @@ I can breathe (#EricGarner)
 I can live (#FreddieGray)
 I CAN BE ARRESTED WITHOUT THE FEAR OF BEING MURDERED (#GeorgeFloyd)
 White privilege is real. Take a minute to consider a Black person’s experience today. #BlackLivesMatter
-*I copied and pasted this ... please do the same.
-`
+*I copied and pasted this ... please do the same.`
 
 export default Poem;
