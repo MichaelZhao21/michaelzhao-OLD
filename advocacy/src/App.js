@@ -11,7 +11,7 @@ import OnlineProtests from './pages/OnlineProtests';
 import WhitePrivilege from './pages/WhitePrivilege';
 import Media from './pages/Media';
 import Pride from './pages/Pride';
-import ToWatch from './pages/ToWatch';
+import External from './pages/External';
 import CurrentEvents from './pages/CurrentEvents';
 import GeorgeProtests from './pages/GeorgeProtests';
 
@@ -49,8 +49,8 @@ const App = () => {
           <Route path="/pride">
             <Pride />
           </Route>
-          <Route path="/to-watch">
-            <ToWatch />
+          <Route path="/external-resources">
+            <External />
           </Route>
           <Route path="/">
             <Home />
