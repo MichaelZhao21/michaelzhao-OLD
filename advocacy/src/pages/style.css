@@ -27,6 +27,10 @@ body,
     filter: drop-shadow(0 0 0.5em #aaaaaa);
 }
 
+.drop-img {
+    filter: drop-shadow(0 0 0.5em #aaaaaa);
+}
+
 .doc-img {
     margin: 0.5em auto 0.5em auto;
     object-fit: scale-down;
