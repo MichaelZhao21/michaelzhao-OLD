@@ -51,6 +51,7 @@ class Help extends React.Component {
                     <a className="link link-list" href="https://www.gofundme.com/f/rip-belly-mujinga">RIP Belly Mujinga (gofundme)</a>
                     <a className="link link-list" href="https://aapf.org/supportshn">#SayHerName - call attention to police violence against Black femmes</a>
                     <a className="link link-list" href="https://www.gofundme.com/f/justicefordavidmcatee">Justice for David McAtee (gofundme)</a>
+                    <a className="link link-list" href="https://www.thepopoloproject.org/donate">The Popolo Project: Redefining what it means to be Black in Hawaii</a>
 
                     <h3>Charitable Causes</h3>
                     <a className="link link-list" href="https://docs.google.com/forms/d/e/1FAIpQLSfIBESAr2BXHE4zMlhj2j4aOe_OYRQlrw7tcemfU51FSe6J8g/viewform">Stickers to Support BLM - fundraiser by UT BHSA</a>
