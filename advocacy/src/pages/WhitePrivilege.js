@@ -13,7 +13,7 @@ class WhitePrivilege extends React.Component {
                 </div>
                 <div class="container">
                     <p>White Privilege</p>
-                    <Footer credit="People to Places Travel" link="https://www.peopletoplacestravel.com/"></Footer>
+                    <Footer credit="WABE: Where ATL meets NPR" link="https://www.wabe.org/he-did-not-pray-fallout-grows-from-trump-s-photo-op-at-st-john-s-church/"></Footer>
                 </div>
             </div>
         )
