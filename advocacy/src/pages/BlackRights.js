@@ -3,7 +3,7 @@ import React from 'react';
 import './css/BlackRights.css';
 import './style.css'
 import Footer from './Footer';
-import BlmLogo from '../files/blm-logo.png';
+import BlmLogo from '../files/blm-logo.jpg';
 import Poem from '../files/privilege-poem';
 import NameWall from '../files/red-name-wall.jpg';
 
