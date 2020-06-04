@@ -18,7 +18,23 @@
     padding: 2rem 2rem;
     font-size: $font-size-lg;
     opacity: 0;
-    @include load-fade(about-magic, 3s);
+    @include load-fade(about-magic, 1s);
     animation-fill-mode: forwards;
     animation-delay: 1s;
+}
+
+.socials {
+    text-align: center;
+    opacity: 0;
+    @include load-fade(about-magic, 1s);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    width: fit-content;
+    margin: auto;
+}
+
+.lsi {
+    background-color: transparent !important;
+    color: black;
+    font-size: x-large;
 }
