@@ -1,4 +1,6 @@
-html, body, #root {
+html,
+body,
+#root {
     height: 100%;
     width: 100%;
 }
@@ -26,7 +28,7 @@ html, body, #root {
 }
 
 .doc-img {
-    margin: .5em 4em .5em 4em;
+    margin: 0.5em 4em 0.5em 4em;
     object-fit: scale-down;
     height: 20em;
     display: block;
@@ -40,7 +42,7 @@ h1 {
 }
 
 h2 {
-    margin: 0.8em 0 0.4em 0;
+    margin: 0.8em 1em 0.4em 1em;
     font-weight: 700;
     font-size: 3em;
 }
@@ -74,6 +76,12 @@ ul {
     text-align: center;
 }
 
+.quote {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
 .link {
     font-size: 1.4em;
     margin: 1em 2em 1em 2em;
@@ -84,16 +92,16 @@ ul {
 
 .link:hover {
     color: #523610;
-    filter: drop-shadow(0 0 .01em #492c0a);
+    filter: drop-shadow(0 0 0.01em #492c0a);
 }
 
 .link-list {
     margin: 0 2em 0 2em !important;
-    padding: .5em 0 .5em 0 !important;
+    padding: 0.5em 0 0.5em 0 !important;
 }
 
 .caption {
-    font-size: .9em;
+    font-size: 0.9em;
     margin: 0 2em 0 2em;
     font-weight: 300;
 }
@@ -126,7 +134,7 @@ ul {
 }
 
 .spacer {
-    margin: .5em;
+    margin: 0.5em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -159,6 +167,7 @@ ul {
         font-size: 4em;
     }
     h2 {
+        margin: 0.8em 0.2em 0.4em 0.2em;
         font-size: 2em;
     }
     p {
