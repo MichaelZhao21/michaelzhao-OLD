@@ -39,8 +39,9 @@ class Help extends React.Component {
                     <a className="link link-list" href="https://secure.actblue.com/donate/naacp-ep-2020">NAACP Empowerment Program</a>
                     <a className="link link-list" href="https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor">Justice for Breonna Taylor (gofundme)</a>
                     <a className="link link-list" href="https://www.gofundme.com/f/justice-for-dion-johnson">Justic for Dion Johnson (gofundme)</a>
-                    <a className="link link-list" href="https://www.gofundme.com/f/justice-for-regis">Justice For Regis</a>
-                    
+                    <a className="link link-list" href="https://www.gofundme.com/f/justice-for-regis">Justice For Regis (gofundme)</a>
+
+                    <h2>Going to Protest</h2>
 
                     <h2>Support</h2>
                     <a className="link link-list" href="https://docs.google.com/document/d/1qpn5fFrG4-FLfGo3cUsiwb7OvDnnL10uOnF50X-1v90/edit">List of Black-Owned Businesses</a>
