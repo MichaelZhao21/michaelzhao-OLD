@@ -23,6 +23,7 @@ class About extends React.Component {
 						<ListGroup.Item className="lsi">Discord: Mikey#0662</ListGroup.Item>
 						<ListGroup.Item className="lsi">Wechat: mikey314</ListGroup.Item>
 					</ListGroup>
+					<div className="spacer"></div>
 				</div>
 				{/* TODO: add picture */}
 			</Container>
