@@ -14,8 +14,8 @@ class GeorgeProtests extends React.Component {
                     <h1>George Floyd Protests</h1>
                 </div>
                 <div class="container">
-                    <a className="link" href={Case}>Derek Chauvin's Case 5/29/2020</a>
-                    <a className="link" href={Autopsy}>Derek Chauvin's Autopsy 5/26/2020</a>
+                    <a className="link link-list" href={Case}>Derek Chauvin's Case 5/29/2020</a>
+                    <a className="link link-list" href={Autopsy}>Derek Chauvin's Autopsy 5/26/2020</a>
                     <Footer credit="Time Magazine" link="https://time.com/5845632/london-protests-george-floyd/"></Footer>
                 </div>
             </div>
