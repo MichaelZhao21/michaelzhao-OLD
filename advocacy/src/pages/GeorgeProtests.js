@@ -11,7 +11,7 @@ class GeorgeProtests extends React.Component {
         return (
             <div>
                 <div className="header george-header">
-                    <h1>George Floyd Protests</h1>
+                    <h1>George Floyd & Protests</h1>
                 </div>
                 <div class="container">
                     <a className="link link-list" href={Case}>Derek Chauvin's Case 5/29/2020</a>
