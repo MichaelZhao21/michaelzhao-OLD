@@ -3,3 +3,8 @@
     background-size: cover;
     background-position-y: center;
 }
+
+.colored-section {
+    color: #5f3601;
+    font-weight: 900;
+}
