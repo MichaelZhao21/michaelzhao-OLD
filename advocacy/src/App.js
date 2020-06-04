@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 
+import ScrollToTop from './pages/ScrollToTop';
 import Home from './pages/Home';
 import Help from './pages/Help';
 import BlackRights from './pages/BlackRights';
@@ -17,6 +18,7 @@ import GeorgeProtests from './pages/GeorgeProtests';
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Link className="home-button" to="/">Back to Home</Link>
       <div className="app">
         <Switch>
