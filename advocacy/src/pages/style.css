@@ -25,6 +25,13 @@ html, body, #root {
     filter: drop-shadow(0 0 0.5em #aaaaaa);
 }
 
+.doc-img {
+    margin: .5em 4em .5em 4em;
+    object-fit: scale-down;
+    height: 20em;
+    display: block;
+}
+
 h1 {
     margin: 0;
     font-size: 8em;
@@ -46,7 +53,12 @@ h3 {
 
 p {
     font-size: 1.4em;
-    margin: 1em 2em 1em 2em;
+    margin: 0 2em 1em 2em;
+    text-align: left;
+}
+
+.p {
+    text-indent: 2em;
 }
 
 ul {
@@ -56,6 +68,10 @@ ul {
 
 .left {
     text-align: left;
+}
+
+.mid {
+    text-align: center;
 }
 
 .link {
@@ -72,13 +88,20 @@ ul {
 }
 
 .link-list {
-    margin: .5em 2em .5em 2em !important;
+    margin: 0 2em 0 2em !important;
+    padding: .5em 0 .5em 0 !important;
 }
 
 .caption {
     font-size: .9em;
     margin: 0 2em 0 2em;
     font-weight: 300;
+}
+
+.citation {
+    padding-left: 2em;
+    text-indent: -2em;
+    font-size: 1em;
 }
 
 .section-button {
@@ -124,6 +147,9 @@ ul {
     p {
         font-size: 1em;
         margin: 1em;
+    }
+    .doc-img {
+        height: 15em;
     }
 }
 
