@@ -208,6 +208,34 @@ ul {
     filter: drop-shadow(0 0 0.5em #aaaaaa);
 }
 
+table {
+    margin: auto;
+    background-color: black;
+    width: 80%;
+    margin-bottom: 1em;
+    table-layout: fixed;
+}
+
+th, td {
+    background-color: white;
+    padding: 0.5em;
+    font-size: 1.4em;
+}
+
+.tab-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-link {
+    margin-bottom: 0.5em;
+}
+
+.tiktok-embed {
+    max-width: 605px;
+    min-width: 325px;
+}
+
 @media only screen and (max-width: 1200px) {
     .nyt-vid {
         width: 40em;
@@ -234,6 +262,9 @@ ul {
     ul {
         font-size: 1.2em;
         margin: 1em;
+    }
+    th, td {
+        font-size: 1em;
     }
     .inst {
         filter: drop-shadow(0 0 0.2em #888888);
