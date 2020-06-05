@@ -58,6 +58,10 @@ body,
     filter: drop-shadow(0 0 0.5em #888888);
 }
 
+.inst-div {
+    padding: 0.5em;
+}
+
 h1 {
     margin: 0;
     font-size: 8em;
@@ -208,6 +212,10 @@ ul {
     filter: drop-shadow(0 0 0.5em #aaaaaa);
 }
 
+.flex-div {
+    display: flex;
+}
+
 table {
     margin: auto;
     background-color: black;
@@ -232,8 +240,8 @@ th, td {
 }
 
 .tiktok-embed {
-    max-width: 605px;
-    min-width: 325px;
+    max-width: 45%;
+    min-width: 45%;
 }
 
 @media only screen and (max-width: 1200px) {
