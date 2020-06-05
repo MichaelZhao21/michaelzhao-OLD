@@ -23,8 +23,7 @@ class Help extends React.Component {
                     <a className="link link-list" href="https://www.change.org/p/justice-for-tony-mcdade?use_react=false">Justice for Tony McDade</a>
                     <a className="link link-list" href="https://www.change.org/p/district-attorney-tom-durden-justice-for-ahmaud-arbery-i-run-with-maud?source_location=petitions_browse">Justice for Ahmaud Arbery! I Run with Maud!</a>
                     <a className="link link-list" href="https://www.change.org/p/ventilator-manufacturers-remove-barriers-to-fixing-ventilators?source_location=petitions_browse">Remove barriers to fixing ventilators</a>
-                    <a className="link link-list" href="https://www.change.org/p/minneapolis-district-attorney-raise-the-degree?source_location=petitions_browse">RAISE THE DEGREE (Of Derek Chauvin's Murder Conviction)</a>
-                    <a className="link link-list" href="https://www.change.org/p/change-org-the-minneapolis-police-officers-to-be-charged-for-murder-after-killing-innocent-black-man?source_location=petitions_browse">Charge the Other Three Officers</a>
+                    <a className="link link-list" href="https://www.change.org/p/change-org-the-minneapolis-police-officers-to-be-charged-for-murder-after-killing-innocent-black-man?source_location=petitions_browse">Charge the Other Three Officers for Murder</a>
                     <a className="link link-list" href="https://www.change.org/p/national-action-against-police-brutality-and-murder">NATIONAL ACTION AGAINST POLICE BRUTALITY! PROSECUTE POLICE WHO MURDER UNARMED INDIVIDUALS!</a>
                     <a className="link link-list" href="https://www.change.org/p/un-and-us-government-ban-the-use-of-rubber-bullets?recruiter=922712485&recruited_by_id=62d8f120-fdb6-11e8-8dbd-0dee42fd9442&utm_source=share_petition&utm_medium=copylink&utm_campaign=petition_dashboard">Ban the use of rubber bullets for crowd control</a>
 
