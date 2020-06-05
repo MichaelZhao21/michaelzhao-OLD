@@ -255,6 +255,13 @@ th, td {
         margin: 0;
         padding: 0;
     }
+    .flex-div {
+        flex-direction: column;
+    }
+    .tiktok-embed {
+        max-width: 95%;
+        min-width: 95%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
