@@ -62,6 +62,7 @@ class Help extends React.Component {
 
                     <h2 className="colored-section">Going to Protest</h2>
                     <InstagramEmbed className="inst" url='https://instagr.am/p/CA0jzCdg_vR' maxWidth={1000} hideCaption={false} containerTagName='div'></InstagramEmbed>
+                    <a className="link link-list" href="https://www.aclu.org/news/free-speech/know-your-rights-while-protesting-police-brutality/">Know your rights while protesting</a>
                     <a className="link link-list" href="https://www.centraltrack.com/things-to-do-in-dallas-go-to-a-protest/">Protests happening in and around Dallas NOW [CentralTrack]</a>
                     <InstagramEmbed className="inst" url='https://instagr.am/p/CA9cfFuptEz' maxWidth={1000} hideCaption={true} containerTagName='div'></InstagramEmbed>
 
