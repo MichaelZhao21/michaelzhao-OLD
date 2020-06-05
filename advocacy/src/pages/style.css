@@ -168,6 +168,15 @@ ul {
     font-size: 1em;
 }
 
+.content-warning {
+    font-size: 1em !important;
+    border-radius: 1em;
+    cursor: pointer;
+    border: 0.2em solid #484848 !important;
+    padding: 0.5em !important;
+    font-weight: 700 !important;
+}
+
 .section-button {
     text-decoration: none;
     background-color: none;
