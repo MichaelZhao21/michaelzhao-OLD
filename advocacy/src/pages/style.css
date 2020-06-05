@@ -207,8 +207,8 @@ ul {
 }
 
 .nyt-vid {
-    width: 50em;
-    height: calc(50em * 321 / 480);
+    width: 50em !important;
+    height: calc(50em * 321 / 480) !important;
     filter: drop-shadow(0 0 0.5em #aaaaaa);
 }
 
@@ -246,8 +246,8 @@ th, td {
 
 @media only screen and (max-width: 1200px) {
     .nyt-vid {
-        width: 40em;
-        height: calc(40em * 321 / 480);
+        width: 40em !important;
+        height: calc(40em * 321 / 480) !important;
         filter: drop-shadow(0 0 0.5em #aaaaaa);
     }
     .container {
@@ -265,6 +265,11 @@ th, td {
 }
 
 @media only screen and (max-width: 800px) {
+    .nyt-vid {
+        width: 95vw !important;
+        height: calc(105vw * 321 / 480) !important;
+        filter: drop-shadow(0 0 0.5em #aaaaaa);
+    }
     h1 {
         font-size: 5em;
     }
