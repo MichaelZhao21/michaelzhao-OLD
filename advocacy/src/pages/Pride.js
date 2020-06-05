@@ -15,10 +15,14 @@ class Pride extends React.Component {
                 </div>
                 <div className="container">
                     <h2>Pridefall</h2>
-                    <img className="doc-img drop-img" src={pridefall}></img>
+                    <p>
+                        <a href={pridefall}>
+                            <img className="doc-img drop-img pride-img" src={pridefall}></img>
+                        </a>
+                    </p>
 
                     <h2>Activities of Operation Pridefall</h2>
-                    <p>{text.pride[0]}</p>
+                    <p className="p">{text.pride[0]}</p>
 
                     <h2>Sources for this section</h2>
                     <p className="citation">{text.pride[1]}</p>
