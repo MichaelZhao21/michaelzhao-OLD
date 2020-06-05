@@ -16,6 +16,7 @@ class Help extends React.Component {
                     <h2 className="colored-section">Petitions to Sign</h2>
 
                     <h3>Change.org</h3>
+                    <p className="mid">DO NOT DONATE TO CHANGE.ORG - IT GOES TO THE WEBSITE AND NOT THE ACTUAL PETITIONER (It will ask after you sign)</p>
                     <a className="link link-list" href="https://www.change.org/p/mayor-jacob-frey-justice-for-george-floyd?source_location=petitions_browse">Justice for George Floyd</a>
                     <a className="link link-list" href="https://www.change.org/p/andy-beshear-justice-for-breonna-taylor?source_location=petitions_browse">Justice for Breonna Taylor</a>
                     <a className="link link-list" href="https://www.change.org/p/govia-thameslink-justice-for-belly-mujinga">Justice for Belly Mujinga</a>
@@ -60,15 +61,16 @@ class Help extends React.Component {
                     <a className="link link-list" href="https://twitter.com/kookpics/status/1268534687112335361?s=21">Click on links to pages that earn money through clicks</a>
                     <a className="link link-list" href="https://www.youtube.com/watch?v=bCgLa25fDHM&t=3016s">Stream this video to generate ad revenue!</a>
 
+                    <h2 className="colored-section">Other Resources</h2>
+                    <a className="link link-list" href="https://docs.google.com/document/d/1qpn5fFrG4-FLfGo3cUsiwb7OvDnnL10uOnF50X-1v90/edit">List of Black-Owned Businesses to Support</a>
+                    <a className="link link-list" href="https://blacklivesmatters.carrd.co/">blacklivesmatters.carrd.co - Great resource to find more ways to help</a>
+                    <a className="link link-list" href="https://www.youtube.com/watch?v=krfcq5pF8u8">13th - A Documentary about the history of racial inequality in the US (Now free on YouTube!)</a>
+
                     <h2 className="colored-section">Going to Protest</h2>
                     <InstagramEmbed className="inst" url='https://instagr.am/p/CA0jzCdg_vR' maxWidth={1000} hideCaption={false} containerTagName='div'></InstagramEmbed>
                     <a className="link link-list" href="https://www.aclu.org/news/free-speech/know-your-rights-while-protesting-police-brutality/">Know your rights while protesting</a>
                     <a className="link link-list" href="https://www.centraltrack.com/things-to-do-in-dallas-go-to-a-protest/">Protests happening in and around Dallas NOW [CentralTrack]</a>
                     <InstagramEmbed className="inst" url='https://instagr.am/p/CA9cfFuptEz' maxWidth={1000} hideCaption={true} containerTagName='div'></InstagramEmbed>
-
-                    <h2 className="colored-section">Other Resources</h2>
-                    <a className="link link-list" href="https://docs.google.com/document/d/1qpn5fFrG4-FLfGo3cUsiwb7OvDnnL10uOnF50X-1v90/edit">List of Black-Owned Businesses to Support</a>
-                    <a className="link link-list" href="https://blacklivesmatters.carrd.co/">blacklivesmatters.carrd.co - Great resource to find more ways to help</a>
 
                     <div className="spacer"></div>
                     <Footer credit="Perry Grone on Unsplash" link="https://unsplash.com/photos/lbLgFFlADrY"></Footer>

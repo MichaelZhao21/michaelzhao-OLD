@@ -5,6 +5,7 @@ import './style.css'
 import Case from '../files/derek-case.pdf';
 import Autopsy from '../files/autopsy.pdf';
 import Footer from './Footer';
+import text from '../files/text.json';
 
 class GeorgeProtests extends React.Component {
     render() {
@@ -40,6 +41,20 @@ class GeorgeProtests extends React.Component {
                         <li>(As of 6/4/2020) Chauvin is charged with 2nd degree murder, and the 3 other cops were charged with aiding and abetting murder</li>
                         <li><b>8 minutes and 46 seconds.</b> That’s how long Chauvin’s knee was on Floyd’s neck</li>
                     </ul>
+
+                    <h2>Analysis of Trials and Outcomes</h2>
+                    <ul>
+                        <li><b>First degree murder</b>: A deliberate, premeditated killing. The hardest part of the conviction is the premediation, where the defendant planned the killing in advance</li>
+                        <li><b>Second degree murder</b>: An intentional murder (drive-by shooting meant to kill) or when someone is unintentionally murdered duing a felony (like a robbery)</li>
+                        <li><b>Third degree murder</b>: Normally very rare, described as unintentional murder where the defendant caused a reckless act that endangers someone to the point of death</li>
+                    </ul>
+                    <p className="p">{text.george[1]}</p>
+                    <p className="p">{text.george[2]}</p>
+
+                    <h2>Sources for this Section</h2>
+                    <p className="citation">{text.george[0]}</p>
+                    <p className="citation">{text.george[3]}</p>
+                    <p className="citation">{text.george[4]}</p>
 
                     <div className="spacer"></div>
                     <Footer credit="Time Magazine" link="https://time.com/5845632/london-protests-george-floyd/"></Footer>
