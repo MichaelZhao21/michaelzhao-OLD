@@ -4,6 +4,7 @@ import './style.css'
 import './css/Pride.css'
 import Footer from './Footer';
 import pridefall from '../files/pridefall-4chan-post.jpg';
+import text from '../files/text.json';
 
 class Pride extends React.Component {
     render() {
@@ -15,6 +16,13 @@ class Pride extends React.Component {
                 <div className="container">
                     <h2>Pridefall</h2>
                     <img className="doc-img drop-img" src={pridefall}></img>
+
+                    <h2>Activities of Operation Pridefall</h2>
+                    <p>{text.pride[0]}</p>
+
+                    <h2>Sources for this section</h2>
+                    <p className="citation">{text.pride[1]}</p>
+                    <div className="spacer"></div>
                     <Footer credit="Mercedes Mehling on Unsplash" link="https://unsplash.com/photos/7J7x8HLXQKA"></Footer>
                 </div>
             </div>

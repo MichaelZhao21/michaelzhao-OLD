@@ -8,8 +8,11 @@ import current from '../files/current-events.json';
 class CurrentEvents extends React.Component {
     render() {
         const events = [];
+        var flop = false;
         for (var i = 0; i < current.events.length; i++) {
-            events.push(<a className="link link-list events" href={current.events[i][1]}>{current.events[i][0]}</a>);
+            flop = !flop;
+            var cn = "link link-list events " + (flop ? "events-dark" : "");
+            events.push(<a className={cn} href={current.events[i][1]}>{current.events[i][0]}</a>);
         }
         
         return (

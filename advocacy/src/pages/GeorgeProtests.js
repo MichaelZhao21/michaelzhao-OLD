@@ -15,10 +15,11 @@ class GeorgeProtests extends React.Component {
                 </div>
                 <div className="container">
                     <div className="spacer"></div>
-                    <a className="link link-list" href={Case}>Derek Chauvin's Case 5/29/2020</a>
-                    <a className="link link-list" href={Autopsy}>George Floyd's Autopsy 5/26/2020</a>
+                    <h2>Important Files</h2>
+                    <a className="link link-list" href={Autopsy}><b>[PDF] George Floyd's Autopsy 5/26/2020</b></a>
+                    <a className="link link-list" href={Case}><b>[PDF] Derek Chauvin's Case 5/29/2020</b></a>
 
-                    <h2>George Floyd Case Explained</h2>
+                    <h2>What Happened to George Floyd</h2>
                     <div className="video">
                         <iframe className="nyt-vid" title="New York Times Video - Embed Player" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" id="nyt_video_player" src="https://www.nytimes.com/video/players/offsite/index.html?videoId=100000007159353"></iframe>
                     </div>
