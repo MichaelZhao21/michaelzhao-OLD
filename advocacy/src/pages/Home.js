@@ -32,6 +32,7 @@ class Home extends React.Component {
                     <p className="p">{text.about[1]}</p>
                     <a className="section-button contribute-button" href="https://forms.gle/Rm6HZsfxgCcb5qk17">Feedback / Questions / Want to Contribute?</a>
                     <div className="spacer"></div>
+                    <p className="caption mid">Special Thanks to: Lily Nguygen, Ashley Nguyen, Rosalyn Lu, Grace Liu, and Ivy Liang for Helping out!</p>
                     <Footer credit="Al Jazeera English" link="https://twitter.com/AJEnglish/status/1267428269470748673"></Footer>
                 </div>
             </div>

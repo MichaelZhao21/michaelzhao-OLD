@@ -83,19 +83,21 @@ h3 {
 
 p,
 pre,
-ul {
+ul,
+ol {
     font-size: 1.4em;
     margin: 0 2em 1em 2em;
     text-align: left;
     font-family: "Montserrat", sans-serif;
 }
 
-ul {
+ul, ol {
     margin-top: 0 !important;
 }
 
 li {
     margin-left: 2em;
+    margin-top: 0.2em;
 }
 
 pre {
@@ -117,7 +119,7 @@ pre {
     justify-content: center;
 }
 
-ul {
+ul, ol {
     padding: 0 1em 0 1em;
     margin: 1em;
 }
@@ -279,7 +281,8 @@ th, td {
     }
     p,
     pre,
-    ul {
+    ul,
+    ol {
         font-size: 1.2em;
         margin: 1em;
     }
@@ -307,7 +310,8 @@ th, td {
     }
     p,
     pre,
-    ul {
+    ul,
+    ol {
         font-size: 1em;
     }
 }

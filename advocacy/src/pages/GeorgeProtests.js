@@ -37,7 +37,7 @@ class GeorgeProtests extends React.Component {
                         <li>Floyd said “I can’t breathe” 16 times in the span of 5 minutes</li>
                         <li>Chauvin putting his knee on Floyd’s neck is banned in most police departments in America</li>
                         <li>In Minneapolis, it's only allowed if the suspect is “actively resisting,” which Floyd clearly wasn't</li>
-                        <li>Both autopsies (public and private) marked the cause of death as a homocide</li>
+                        <li>Both autopsies (public and private) marked the cause of death as a homicide</li>
                         <li>(As of 6/4/2020) Chauvin is charged with 2nd degree murder, and the 3 other cops were charged with aiding and abetting murder</li>
                         <li><b>8 minutes and 46 seconds.</b> That’s how long Chauvin’s knee was on Floyd’s neck</li>
                     </ul>
