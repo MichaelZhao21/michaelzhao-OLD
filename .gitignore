@@ -6,6 +6,7 @@ client/.pnp
 client/.pnp.js
 api/node_modules
 advocacy/node_modules
+api/files/postup.json
 
 # testing
 client/coverage
