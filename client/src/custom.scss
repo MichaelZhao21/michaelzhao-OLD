@@ -4,10 +4,12 @@ $primary-dark: #f09544;
 $secondary: #ea7526;
 $secondary-dark: #852f0f;
 $third: #FFAA55;
-@import "~bootstrap/scss/bootstrap";
+
+$font-size-lg: 5em;
+
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
-$main-text-font: "Titillium Web", $font-family-sans-serif;
+$main-text-font: "Titillium Web", sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
 $title-font: 'Shadows Into Light Two', cursive;
@@ -17,14 +19,14 @@ $title-font: 'Shadows Into Light Two', cursive;
   height: 100%;
 }
 
-@include media-breakpoint-up(lg) {
+@media only screen and (min-width: 992px) {
   .custom-container {
     margin-left: 10rem;
     margin-right: 10rem;
   }
 }
 
-@include media-breakpoint-up(xl) {
+@media only screen and (min-width: 1200px) {
   .custom-container {
     margin-left: 25rem;
     margin-right: 25rem;
@@ -46,7 +48,7 @@ a:hover {
 
 p::selection, a::selection, h1::selection {
   background: $primary-dark;
-  color: $white;
+  color: white;
 }
 
 @mixin load-fade($name, $time) {

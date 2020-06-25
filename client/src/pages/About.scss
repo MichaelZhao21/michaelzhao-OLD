@@ -2,11 +2,20 @@
 
 @include load-fade-frames(about-magic, 1rem);
 
+.about-intro {
+    background-color: $primary-dark;
+    padding: 2em;
+    border-radius: 1em;
+}
+
 .about-title {
     color: $secondary;
     text-align: center;
     font-family: $title-font;
     margin-bottom: 3rem;
+    padding-top: 1em;
+    margin-top: 0;
+    font-size: $font-size-lg;
     @include load-fade(about-magic, 1.25s);
 }
 
@@ -14,7 +23,7 @@
     background-color: transparent;
     border: solid .2rem $secondary;
     border-radius: 2rem;
-    color: $black;
+    color: black;
     padding: 2rem 2rem;
     font-size: $font-size-lg;
     opacity: 0;
