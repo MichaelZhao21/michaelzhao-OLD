@@ -1,5 +1,6 @@
 import React from "react";
 import Matter, { Body, Events } from "matter-js";
+import './Game.scss';
 
 class Game extends React.Component {
     constructor(props) {
@@ -8,6 +9,7 @@ class Game extends React.Component {
         this.canvas = React.createRef();
         this.mainDiv = React.createRef();
         this.keyMap = {};
+        this.playerOnGround = false;
     }
 
     updateDimensions = () => {
@@ -17,22 +19,39 @@ class Game extends React.Component {
 
     keyDown = (event) => {
         this.keyMap[event.keyCode] = true;
-        console.log(event.keyCode)
     }
 
     keyUp = (event) => {
         this.keyMap[event.keyCode] = false;
     }
 
-    moveCharacter = () => {
-        if (this.keyMap[39]) Body.setVelocity(this.gameBodies[0], { x: (this.keyMap[17] ? 5 : 2.5), y: this.gameBodies[0].velocity.y });
-        if (this.keyMap[37]) Body.setVelocity(this.gameBodies[0], { x: (this.keyMap[17] ? -5 : -2.5), y: this.gameBodies[0].velocity.y });
-        if (this.keyMap[38] || this.keyMap[32]) Body.setVelocity(this.gameBodies[0], { x: this.gameBodies[0].velocity.x, y: -10 });
-        if (this.keyMap[40]) Body.setVelocity(this.gameBodies[0], { x: this.gameBodies[0].velocity.x, y: 10 });
+    collisionStart = (event) => {
+        var pairs = event.pairs;
+        for (var i = 0; i < pairs.length; i++) {
+            var pair = pairs[i];
+            if ((pair.bodyA === this.gameBodies.bodyA && pair.bodyB === this.gameBodies.ground) ||
+                (pair.bodyB === this.gameBodies.bodyA && pair.bodyA === this.gameBodies.ground)) {
+                this.playerOnGround = true;
+            }
+        }
     }
 
-    groundCollision = () => {
-        
+    collisionEnd = (event) => {
+        var pairs = event.pairs;
+        for (var i = 0; i < pairs.length; i++) {
+            var pair = pairs[i];
+            if ((pair.bodyA === this.gameBodies.bodyA && pair.bodyB === this.gameBodies.ground) ||
+                (pair.bodyB === this.gameBodies.bodyA && pair.bodyA === this.gameBodies.ground)) {
+                this.playerOnGround = false;
+            }
+        }
+    }
+
+    moveCharacter = () => {
+        if (this.keyMap[39]) Body.setVelocity(this.gameBodies.bodyA, { x: (this.keyMap[17] ? 5 : 2.5), y: this.gameBodies.bodyA.velocity.y });
+        if (this.keyMap[37]) Body.setVelocity(this.gameBodies.bodyA, { x: (this.keyMap[17] ? -5 : -2.5), y: this.gameBodies.bodyA.velocity.y });
+        if ((this.keyMap[38] || this.keyMap[32]) && this.playerOnGround) Body.setVelocity(this.gameBodies.bodyA, { x: this.gameBodies.bodyA.velocity.x, y: -10 });
+        if (this.keyMap[40]) Body.setVelocity(this.gameBodies.bodyA, { x: this.gameBodies.bodyA.velocity.x, y: 10 });
     }
 
     componentDidMount() {
@@ -60,14 +79,14 @@ class Game extends React.Component {
             bodyB = this.Bodies.rectangle(450, 50, 80, 80),
             ground = this.Bodies.rectangle(500, 500, 3000, 100, { isStatic: true });
 
-        this.gameBodies = [bodyA, bodyB, ground];
+        this.gameBodies = { bodyA, ground };
 
-        this.World.add(engine.world, this.gameBodies);
+        this.World.add(engine.world, Object.values(this.gameBodies));
 
-        const moveCharacter = this.moveCharacter;
-        Events.on(engine, 'beforeUpdate', function(event) {
-            moveCharacter();
-        })
+        Events.on(engine, 'beforeUpdate', () => this.moveCharacter());
+        Events.on(engine, 'collisionStart', (event) => this.collisionStart(event));
+        Events.on(engine, 'collisionEnd', (event) => this.collisionEnd(event));
+        // Events.on(engine, 'collisionActive', (event) => console.log(event));
 
         this.Engine.run(engine);
         this.Render.run(render);
@@ -84,6 +103,7 @@ class Game extends React.Component {
     render() {
         return (
             <div>
+                <p id="hi">Hi use arrow keys to move around and hold control to go faster!</p>
                 <div ref={this.divRef}>
                     <canvas ref={this.canvas}></canvas>
                 </div>
