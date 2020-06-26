@@ -9,7 +9,7 @@ class Game extends React.Component {
         this.canvas = React.createRef();
         this.mainDiv = React.createRef();
         this.keyMap = {};
-        this.playerOnGround = false;
+        this.playerCollision = false;
     }
 
     updateDimensions = () => {
@@ -25,32 +25,18 @@ class Game extends React.Component {
         this.keyMap[event.keyCode] = false;
     }
 
-    collisionStart = (event) => {
-        var pairs = event.pairs;
-        for (var i = 0; i < pairs.length; i++) {
-            var pair = pairs[i];
-            if ((pair.bodyA === this.gameBodies.bodyA && pair.bodyB === this.gameBodies.ground) ||
-                (pair.bodyB === this.gameBodies.bodyA && pair.bodyA === this.gameBodies.ground)) {
-                this.playerOnGround = true;
-            }
-        }
+    collisionActive = (event) => {
+        this.playerCollision = true;
     }
 
     collisionEnd = (event) => {
-        var pairs = event.pairs;
-        for (var i = 0; i < pairs.length; i++) {
-            var pair = pairs[i];
-            if ((pair.bodyA === this.gameBodies.bodyA && pair.bodyB === this.gameBodies.ground) ||
-                (pair.bodyB === this.gameBodies.bodyA && pair.bodyA === this.gameBodies.ground)) {
-                this.playerOnGround = false;
-            }
-        }
+        this.playerCollision = false;
     }
 
     moveCharacter = () => {
         if (this.keyMap[39]) Body.setVelocity(this.gameBodies.bodyA, { x: (this.keyMap[17] ? 5 : 2.5), y: this.gameBodies.bodyA.velocity.y });
         if (this.keyMap[37]) Body.setVelocity(this.gameBodies.bodyA, { x: (this.keyMap[17] ? -5 : -2.5), y: this.gameBodies.bodyA.velocity.y });
-        if ((this.keyMap[38] || this.keyMap[32]) && this.playerOnGround) Body.setVelocity(this.gameBodies.bodyA, { x: this.gameBodies.bodyA.velocity.x, y: -10 });
+        if ((this.keyMap[38] || this.keyMap[32]) && this.playerCollision) Body.setVelocity(this.gameBodies.bodyA, { x: this.gameBodies.bodyA.velocity.x, y: -10 });
         if (this.keyMap[40]) Body.setVelocity(this.gameBodies.bodyA, { x: this.gameBodies.bodyA.velocity.x, y: 10 });
     }
 
@@ -75,18 +61,18 @@ class Game extends React.Component {
             }
         });
 
-        var bodyA = this.Bodies.rectangle(400, 200, 80, 80, { inertia: Infinity }),
-            bodyB = this.Bodies.rectangle(450, 50, 80, 80),
-            ground = this.Bodies.rectangle(500, 500, 3000, 100, { isStatic: true });
+        var bodyA = this.Bodies.rectangle(400, 400, 80, 80, { inertia: Infinity }),
+            bodyB = this.Bodies.circle(500, 400, 40),
+            ground = this.Bodies.rectangle(500, 500, 3000, 100, { isStatic: true }),
+            ceiling = this.Bodies.rectangle(500, 200, 3000, 100, { isStatic: true });
 
-        this.gameBodies = { bodyA, ground };
+        this.gameBodies = { bodyA, bodyB, ground, ceiling };
 
         this.World.add(engine.world, Object.values(this.gameBodies));
 
         Events.on(engine, 'beforeUpdate', () => this.moveCharacter());
-        Events.on(engine, 'collisionStart', (event) => this.collisionStart(event));
+        Events.on(engine, 'collisionStart', (event) => this.collisionActive(event));
         Events.on(engine, 'collisionEnd', (event) => this.collisionEnd(event));
-        // Events.on(engine, 'collisionActive', (event) => console.log(event));
 
         this.Engine.run(engine);
         this.Render.run(render);
