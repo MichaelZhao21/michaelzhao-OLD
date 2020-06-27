@@ -5,7 +5,8 @@ import './Game.scss';
 class Game extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        
+        // Create variables
         this.canvas = React.createRef();
         this.mainDiv = React.createRef();
         this.keyMap = {};
@@ -13,15 +14,19 @@ class Game extends React.Component {
     }
 
     componentDidMount() {
+        // Create variables for main matter.js classes
         this.Engine = Matter.Engine;
         this.Render = Matter.Render;
         this.World = Matter.World;
         this.Bodies = Matter.Bodies;
 
+        // Create the game engine
         var engine = this.Engine.create();
 
+        // Update the size of the canvas
         this.updateDimensions();
 
+        // Instantiate the rendering engine
         var render = this.Render.create({
             element: this.mainDiv.current,
             canvas: this.canvas.current,
@@ -33,22 +38,28 @@ class Game extends React.Component {
             }
         });
 
+        // Create game objects
         var player = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity }),
             ground1 = this.Bodies.rectangle(1008, 800, 512, 108, { isStatic: true }),
             ground2 = this.Bodies.rectangle(400, 512, 400, 108, { isStatic: true }),
             ground3 = this.Bodies.rectangle(1616, 512, 400, 108, { isStatic: true });
 
+        // Add game objects to world
         this.gameBodies = { player, ground1, ground2, ground3 };
-
         this.World.add(engine.world, Object.values(this.gameBodies));
 
+        // Move character on each tick
         Events.on(engine, 'beforeUpdate', () => this.moveCharacter());
+        
+        // Check for collision of character
         Events.on(engine, 'collisionStart', (event) => this.collisionActive(event));
         Events.on(engine, 'collisionEnd', (event) => this.collisionEnd(event));
 
+        // Run the engine and renderer
         this.Engine.run(engine);
         this.Render.run(render);
 
+        // Add event listeners
         window.addEventListener('resize', this.updateDimensions);
         window.addEventListener('keydown', this.keyDown);
         window.addEventListener('keyup', this.keyUp);
@@ -58,27 +69,34 @@ class Game extends React.Component {
         window.removeEventListener('resize', this.updateDimensions);
     }
 
+    // Updates dimensions to the current width and height
     updateDimensions = () => {
         this.canvas.current.width = window.innerWidth;
         this.canvas.current.height = window.innerHeight;
     }
 
+    // Sets key pressed to true
     keyDown = (event) => {
         this.keyMap[event.keyCode] = true;
     }
 
+    // Sets key pressed to false
     keyUp = (event) => {
         this.keyMap[event.keyCode] = false;
     }
 
+    // Sets player collision to true
     collisionActive = (event) => {
         this.playerCollision = true;
     }
 
+    // Sets player collision to false
     collisionEnd = (event) => {
         this.playerCollision = false;
     }
 
+    // Sets the velocity of the player if a key is pressed
+    // and specific conditions are met
     moveCharacter = () => {
         if (this.keyMap[39]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? 10 : 5), y: this.gameBodies.player.velocity.y });
         if (this.keyMap[37]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? -10 : -5), y: this.gameBodies.player.velocity.y });
@@ -87,6 +105,7 @@ class Game extends React.Component {
         if (this.keyMap[40]) Body.setVelocity(this.gameBodies.player, { x: this.gameBodies.player.velocity.x, y: 10 });
     }
 
+    // Renders the game object
     // TODO: figure out how to ACTUALLY write text
     render() {
         return (
