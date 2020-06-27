@@ -12,34 +12,6 @@ class Game extends React.Component {
         this.playerCollision = false;
     }
 
-    updateDimensions = () => {
-        this.canvas.current.width = window.innerWidth;
-        this.canvas.current.height = window.innerHeight;
-    }
-
-    keyDown = (event) => {
-        this.keyMap[event.keyCode] = true;
-    }
-
-    keyUp = (event) => {
-        this.keyMap[event.keyCode] = false;
-    }
-
-    collisionActive = (event) => {
-        this.playerCollision = true;
-    }
-
-    collisionEnd = (event) => {
-        this.playerCollision = false;
-    }
-
-    moveCharacter = () => {
-        if (this.keyMap[39]) Body.setVelocity(this.gameBodies.bodyA, { x: (this.keyMap[17] ? 5 : 2.5), y: this.gameBodies.bodyA.velocity.y });
-        if (this.keyMap[37]) Body.setVelocity(this.gameBodies.bodyA, { x: (this.keyMap[17] ? -5 : -2.5), y: this.gameBodies.bodyA.velocity.y });
-        if ((this.keyMap[38] || this.keyMap[32]) && this.playerCollision) Body.setVelocity(this.gameBodies.bodyA, { x: this.gameBodies.bodyA.velocity.x, y: -10 });
-        if (this.keyMap[40]) Body.setVelocity(this.gameBodies.bodyA, { x: this.gameBodies.bodyA.velocity.x, y: 10 });
-    }
-
     componentDidMount() {
         this.Engine = Matter.Engine;
         this.Render = Matter.Render;
@@ -61,7 +33,7 @@ class Game extends React.Component {
             }
         });
 
-        var bodyA = this.Bodies.rectangle(400, 400, 80, 80, { inertia: Infinity }),
+        var bodyA = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity }),
             bodyB = this.Bodies.circle(500, 400, 40),
             ground = this.Bodies.rectangle(500, 500, 3000, 100, { isStatic: true }),
             ceiling = this.Bodies.rectangle(500, 200, 3000, 100, { isStatic: true });
@@ -86,6 +58,35 @@ class Game extends React.Component {
         window.removeEventListener('resize', this.updateDimensions);
     }
 
+    updateDimensions = () => {
+        this.canvas.current.width = window.innerWidth;
+        this.canvas.current.height = window.innerHeight;
+    }
+
+    keyDown = (event) => {
+        this.keyMap[event.keyCode] = true;
+    }
+
+    keyUp = (event) => {
+        this.keyMap[event.keyCode] = false;
+    }
+
+    collisionActive = (event) => {
+        this.playerCollision = true;
+    }
+
+    collisionEnd = (event) => {
+        this.playerCollision = false;
+    }
+
+    moveCharacter = () => {
+        if (this.keyMap[39]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? 5 : 2.5), y: this.gameBodies.player.velocity.y });
+        if (this.keyMap[37]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? -5 : -2.5), y: this.gameBodies.player.velocity.y });
+        if ((this.keyMap[38] || this.keyMap[32]) && this.playerCollision) Body.setVelocity(this.gameBodies.player, { x: this.gameBodies.player.velocity.x, y: -10 });
+        if (this.keyMap[40]) Body.setVelocity(this.gameBodies.player, { x: this.gameBodies.player.velocity.x, y: 10 });
+    }
+
+    // TODO: figure out how to ACTUALLY write text
     render() {
         return (
             <div>
