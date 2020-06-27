@@ -33,12 +33,12 @@ class Game extends React.Component {
             }
         });
 
-        var bodyA = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity }),
-            bodyB = this.Bodies.circle(500, 400, 40),
-            ground = this.Bodies.rectangle(500, 500, 3000, 100, { isStatic: true }),
-            ceiling = this.Bodies.rectangle(500, 200, 3000, 100, { isStatic: true });
+        var player = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity }),
+            ground1 = this.Bodies.rectangle(1008, 800, 512, 108, { isStatic: true }),
+            ground2 = this.Bodies.rectangle(400, 512, 400, 108, { isStatic: true }),
+            ground3 = this.Bodies.rectangle(1616, 512, 400, 108, { isStatic: true });
 
-        this.gameBodies = { bodyA, bodyB, ground, ceiling };
+        this.gameBodies = { player, ground1, ground2, ground3 };
 
         this.World.add(engine.world, Object.values(this.gameBodies));
 
@@ -80,8 +80,9 @@ class Game extends React.Component {
     }
 
     moveCharacter = () => {
-        if (this.keyMap[39]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? 5 : 2.5), y: this.gameBodies.player.velocity.y });
-        if (this.keyMap[37]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? -5 : -2.5), y: this.gameBodies.player.velocity.y });
+        if (this.keyMap[39]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? 10 : 5), y: this.gameBodies.player.velocity.y });
+        if (this.keyMap[37]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? -10 : -5), y: this.gameBodies.player.velocity.y });
+        // TODO: add double jump
         if ((this.keyMap[38] || this.keyMap[32]) && this.playerCollision) Body.setVelocity(this.gameBodies.player, { x: this.gameBodies.player.velocity.x, y: -10 });
         if (this.keyMap[40]) Body.setVelocity(this.gameBodies.player, { x: this.gameBodies.player.velocity.x, y: 10 });
     }
