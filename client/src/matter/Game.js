@@ -1,6 +1,8 @@
 import React from "react";
 import Matter, { Body, Events } from "matter-js";
+import Render from './Render';
 import './Game.scss';
+import stage from './stage.json';
 
 class Game extends React.Component {
     constructor(props) {
@@ -10,13 +12,13 @@ class Game extends React.Component {
         this.canvas = React.createRef();
         this.mainDiv = React.createRef();
         this.keyMap = {};
-        this.playerCollision = false;
+        this.jumpCount = 0;
     }
 
     componentDidMount() {
         // Create variables for main matter.js classes
         this.Engine = Matter.Engine;
-        this.Render = Matter.Render;
+        this.Render = Render;
         this.World = Matter.World;
         this.Bodies = Matter.Bodies;
 
@@ -34,26 +36,29 @@ class Game extends React.Component {
             options: {
                 width: this.canvas.current.width,
                 height: this.canvas.current.height,
-                wireframes: true
+                wireframes: true,
+                showAngleIndicator: true
             }
         });
 
-        // Create game objects
-        var player = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity }),
-            ground1 = this.Bodies.rectangle(1008, 800, 512, 108, { isStatic: true }),
-            ground2 = this.Bodies.rectangle(400, 512, 400, 108, { isStatic: true }),
-            ground3 = this.Bodies.rectangle(1616, 512, 400, 108, { isStatic: true });
+        // Create player
+        this.player = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity });
+        
+        // Create stage objects
+        this.gameBodies = [this.player];
+        for (var i = 0; i < stage.platforms.length; i++) {
+            if (stage.platforms[i][0] === "rect")
+                this.gameBodies.push(this.Bodies.rectangle(stage.platforms[i][1], stage.platforms[i][2], stage.platforms[i][3], stage.platforms[i][4], { isStatic: true }));
+        }
 
         // Add game objects to world
-        this.gameBodies = { player, ground1, ground2, ground3 };
-        this.World.add(engine.world, Object.values(this.gameBodies));
+        this.World.add(engine.world, this.gameBodies);
 
-        // Move character on each tick
-        Events.on(engine, 'beforeUpdate', () => this.moveCharacter());
+        // Run main game loop
+        Events.on(engine, 'beforeUpdate', () => this.loop());
         
-        // Check for collision of character
-        Events.on(engine, 'collisionStart', (event) => this.collisionActive(event));
-        Events.on(engine, 'collisionEnd', (event) => this.collisionEnd(event));
+        // Check when character lands on the ground
+        Events.on(engine, 'collisionActive', (event) => this.collisionActive(event));
 
         // Run the engine and renderer
         this.Engine.run(engine);
@@ -67,6 +72,29 @@ class Game extends React.Component {
 
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateDimensions);
+    }
+
+    // Main game loop
+    loop = () => {
+        // Move character
+        this.moveCharacter();
+    }
+
+    // Sets the velocity of the player if a key is pressed
+    // and specific conditions are met
+    moveCharacter = () => {
+        // Directional movement 
+        if (this.keyMap[39]) Body.setVelocity(this.player, { x: this.keyMap[17] ? 10 : 5, y: this.player.velocity.y });
+        if (this.keyMap[37]) Body.setVelocity(this.player, { x: this.keyMap[17] ? -10 : -5, y: this.player.velocity.y });
+        if (this.keyMap[40]) Body.setVelocity(this.player, { x: this.player.velocity.x, y: 10 });
+     
+        // Jumping :D
+        if ((this.keyMap[38] || this.keyMap[32]) && this.jumpCount < 2) {
+            Body.setVelocity(this.player, { x: this.player.velocity.x, y: -10 });
+            this.keyMap[38] = false;
+            this.keyMap[32] = false;
+            this.jumpCount++;
+        }
     }
 
     // Updates dimensions to the current width and height
@@ -86,25 +114,11 @@ class Game extends React.Component {
     }
 
     // Sets player collision to true
-    collisionActive = (event) => {
-        this.playerCollision = true;
+    collisionActive = () => {
+        this.jumpCount = 0;
     }
 
-    // Sets player collision to false
-    collisionEnd = (event) => {
-        this.playerCollision = false;
-    }
-
-    // Sets the velocity of the player if a key is pressed
-    // and specific conditions are met
-    moveCharacter = () => {
-        if (this.keyMap[39]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? 10 : 5), y: this.gameBodies.player.velocity.y });
-        if (this.keyMap[37]) Body.setVelocity(this.gameBodies.player, { x: (this.keyMap[17] ? -10 : -5), y: this.gameBodies.player.velocity.y });
-        // TODO: add double jump
-        if ((this.keyMap[38] || this.keyMap[32]) && this.playerCollision) Body.setVelocity(this.gameBodies.player, { x: this.gameBodies.player.velocity.x, y: -10 });
-        if (this.keyMap[40]) Body.setVelocity(this.gameBodies.player, { x: this.gameBodies.player.velocity.x, y: 10 });
-    }
-
+    
     // Renders the game object
     // TODO: figure out how to ACTUALLY write text
     render() {
