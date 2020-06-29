@@ -3,6 +3,7 @@ import { Body, Events, Engine, World, Bodies, Vector, Bounds } from "matter-js";
 import Render from './Render';
 import './Game.scss';
 import stage from './stage.json';
+import ghost from './textures/BlueGhost.png';
 
 class Game extends React.Component {
     constructor(props) {
@@ -45,6 +46,7 @@ class Game extends React.Component {
 
         // Create player
         this.player = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity, friction: 0.05 });
+        this.player.render.sprite.texture = ghost;
 
         // Create stage objects
         this.gameBodies = [this.player];
@@ -108,8 +110,9 @@ class Game extends React.Component {
     // and specific conditions are met
     moveCharacter = () => {
         // Directional movement
-        if (this.keyMap[39]) Body.setVelocity(this.player, { x: Math.min(this.player.velocity.x + (this.keyMap[17] ? 2.5 : 1.5), 10), y: this.player.velocity.y });
-        if (this.keyMap[37]) Body.setVelocity(this.player, { x: Math.max(this.player.velocity.x + (this.keyMap[17] ? -2.5 : -1.5), -10), y: this.player.velocity.y });
+        var sprint = this.keyMap[17] ? 10 : 5;
+        if (this.keyMap[39]) Body.setVelocity(this.player, { x: Math.min(this.player.velocity.x + 2.5, sprint), y: this.player.velocity.y });
+        if (this.keyMap[37]) Body.setVelocity(this.player, { x: Math.max(this.player.velocity.x - 2.5, -sprint), y: this.player.velocity.y });
 
         // Jumping :D
         if ((this.keyMap[38] || this.keyMap[32]) && this.jumpCount < 2) {
