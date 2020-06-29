@@ -37,9 +37,9 @@ class Game extends React.Component {
             options: {
                 width: this.canvas.current.width,
                 height: this.canvas.current.height,
-                wireframes: true,
+                wireframes: false,
                 hasBounds: true,
-                showAngleIndicator: true
+                background: "#E2CBFF"
             }
         });
 
