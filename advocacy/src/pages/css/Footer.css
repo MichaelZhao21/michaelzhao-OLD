@@ -1,9 +1,0 @@
-.name-link {
-    text-decoration: none;
-    color: goldenrod;
-    transition: 0.2s;
-}
-
-.name-link:hover {
-    color: #926e14;
-}
