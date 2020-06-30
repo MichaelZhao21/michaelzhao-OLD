@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Main from './pages/Main';
-import About from './pages/About';
+import Game from './matter/Game';
+import About from './subpages/advocacy/About';
 import Projects from './pages/Projects';
+import AdvocacyApp from './subpages/advocacy/AdvocacyApp';
 
 import './App.scss'
 
@@ -11,15 +12,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/">
-          <Main name="Michael Zhao" />
-        </Route>
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/advocacy/:other" component={AdvocacyApp} />
+        <Route path="/advocacy" component={AdvocacyApp} />
+        <Route exact path="/" component={Game} />
       </Switch>
     </BrowserRouter >
   );
