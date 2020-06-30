@@ -11,6 +11,15 @@ class About extends React.Component {
 				</div>
 				<div className="socials">
 					<div className="spacer"></div>
+					<ul variant="flush">
+						<li className="lsi">Email: <a href="mailto: michaelzhao314@gmail.com">michaelzhao314@gmail.com</a></li>
+						<li className="lsi">Facebook: <a href="https://www.facebook.com/mikey314">Michael Zhao</a></li>
+						<li className="lsi">Instagram: <a href="https://www.instagram.com/big_mike3141/">big_mike3141</a></li>
+						<li className="lsi">Snapchat: <a href="https://www.snapchat.com/add/zhaova">zhaova</a></li>
+						<li className="lsi">Tiktok: <a href="https://vm.tiktok.com/EfEPwo/">@mikeyyy.21</a></li>
+						<li className="lsi">Discord: Mikey#0662</li>
+						<li className="lsi">Wechat: mikey314</li>
+					</ul>
 				</div>
 				{/* TODO: add picture */}
 			</div>
