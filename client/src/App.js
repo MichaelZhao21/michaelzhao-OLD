@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Game from './matter/Game';
-import About from './subpages/advocacy/About';
+import About from './subpages/about/About';
 import Projects from './pages/Projects';
 import AdvocacyApp from './subpages/advocacy/AdvocacyApp';
 
