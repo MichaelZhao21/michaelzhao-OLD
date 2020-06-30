@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Game from './matter/Game';
 import About from './subpages/about/About';
-import Projects from './pages/Projects';
 import AdvocacyApp from './subpages/advocacy/AdvocacyApp';
 
 import './App.scss'
@@ -13,7 +12,6 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
         <Route path="/advocacy/:other" component={AdvocacyApp} />
         <Route path="/advocacy" component={AdvocacyApp} />
         <Route exact path="/" component={Game} />
