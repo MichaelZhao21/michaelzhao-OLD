@@ -45,7 +45,7 @@ class Game extends React.Component {
         });
 
         // Create player
-        this.player = this.Bodies.rectangle(400, 400, 64, 128, { inertia: Infinity, friction: 0.05 });
+        this.player = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity, friction: 0.05 });
         this.player.render.sprite.texture = ghost;
 
         // Create stage objects
