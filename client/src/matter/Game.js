@@ -45,7 +45,7 @@ class Game extends React.Component {
         });
 
         // Create player
-        this.player = this.Bodies.rectangle(400, 400, 32, 64, { inertia: Infinity, friction: 0.05 });
+        this.player = this.Bodies.rectangle(400, 400, 64, 128, { inertia: Infinity, friction: 0.05 });
         this.player.render.sprite.texture = ghost;
 
         // Create stage objects
@@ -136,7 +136,7 @@ class Game extends React.Component {
         }
 
         var translate = Vector.sub(this.player.position, this.viewCenter);
-        // // Prevent player from going out of bounds
+        // // TODO: Prevent player from going out of bounds
         // if (this.render.bounds.min.x + translate.x < this.world.bounds.min.x)
         //     translate.x = this.world.bounds.min.x - this.render.bounds.min.x;
 
@@ -150,10 +150,23 @@ class Game extends React.Component {
         //     translate.y = this.world.bounds.max.y - this.render.bounds.max.y;
 
         // Update bounds
-        // if (Vector.magnitude(translate) > 1)
         this.Bounds.translate(this.render.bounds, translate);
-        // console.log(this.render.bounds);
+    }
 
+    // Scales view
+    scaleView = (scale) => {
+
+            // scale the render bounds
+            this.render.bounds.max.x = this.render.bounds.min.x + this.render.options.width * scale;
+            this.render.bounds.max.y = this.render.bounds.min.y + this.render.options.height * scale;
+
+            // translate so zoom is from centre of view
+            var translate = {
+                x: this.render.options.width * scale * -0.5,
+                y: this.render.options.height * scale * -0.5
+            };
+
+            Bounds.translate(this.render.bounds, translate);
     }
 
     // Updates dimensions to the current width and height
