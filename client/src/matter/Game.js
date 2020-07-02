@@ -111,8 +111,8 @@ class Game extends React.Component {
     moveCharacter = () => {
         // Directional movement
         var sprint = this.keyMap[17] ? 10 : 5;
-        if (this.keyMap[39]) Body.setVelocity(this.player, { x: Math.min(this.player.velocity.x + 2.5, sprint), y: this.player.velocity.y });
-        if (this.keyMap[37]) Body.setVelocity(this.player, { x: Math.max(this.player.velocity.x - 2.5, -sprint), y: this.player.velocity.y });
+        if (this.keyMap[39]) Body.setVelocity(this.player, { x: Math.min(this.player.velocity.x + 1.5, sprint), y: this.player.velocity.y });
+        if (this.keyMap[37]) Body.setVelocity(this.player, { x: Math.max(this.player.velocity.x - 1.5, -sprint), y: this.player.velocity.y });
 
         // Jumping :D
         if ((this.keyMap[38] || this.keyMap[32]) && this.jumpCount < 2) {
@@ -151,22 +151,6 @@ class Game extends React.Component {
 
         // Update bounds
         this.Bounds.translate(this.render.bounds, translate);
-    }
-
-    // Scales view
-    scaleView = (scale) => {
-
-            // scale the render bounds
-            this.render.bounds.max.x = this.render.bounds.min.x + this.render.options.width * scale;
-            this.render.bounds.max.y = this.render.bounds.min.y + this.render.options.height * scale;
-
-            // translate so zoom is from centre of view
-            var translate = {
-                x: this.render.options.width * scale * -0.5,
-                y: this.render.options.height * scale * -0.5
-            };
-
-            Bounds.translate(this.render.bounds, translate);
     }
 
     // Updates dimensions to the current width and height
