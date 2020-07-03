@@ -176,7 +176,6 @@ class Game extends React.Component {
 
     // Checks if the device is touchscreen or not
     isTouchDevice = () => {
-    
         var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
         
         var mq = function (query) {
@@ -188,10 +187,19 @@ class Game extends React.Component {
             return true;
         }
     
-        // include the 'heartz' as a way to have a non matching MQ to help terminate the join
-        // https://git.io/vznFH
-        var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+        var query = ['(', prefixes.join('touch-enabled),('), 'hi', ')'].join('');
         return mq(query);
+    }
+
+    displayUIButtons = () => {
+        if (this.isTouchDevice()) {
+            return(
+                <div id="ui-buttons">
+                    HERE ARE THE UI BUTTONS :DDDD
+                </div>
+            )
+        }
+        return null;
     }
 
     // Renders the game object
@@ -199,7 +207,7 @@ class Game extends React.Component {
     render() {
         return (
             <div>
-                <p id="hi">Is touch device: {this.isTouchDevice().toString()}</p>
+                {this.displayUIButtons()}
                 <div ref={this.divRef}>
                     <canvas ref={this.canvas}></canvas>
                 </div>
