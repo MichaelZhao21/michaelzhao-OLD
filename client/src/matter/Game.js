@@ -174,13 +174,32 @@ class Game extends React.Component {
         this.jumpCount = 0;
     }
 
+    // Checks if the device is touchscreen or not
+    isTouchDevice = () => {
+    
+        var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+        
+        var mq = function (query) {
+            return window.matchMedia(query).matches;
+        }
+    
+        // Removed document touch bc it's deprecated in Gecko 25
+        if ('ontouchstart' in window) {
+            return true;
+        }
+    
+        // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+        // https://git.io/vznFH
+        var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+        return mq(query);
+    }
 
     // Renders the game object
     // TODO: figure out how to ACTUALLY write text
     render() {
         return (
             <div>
-                <p id="hi">Hi use arrow keys to move around and hold control to go faster!</p>
+                <p id="hi">Is touch device: {this.isTouchDevice().toString()}</p>
                 <div ref={this.divRef}>
                     <canvas ref={this.canvas}></canvas>
                 </div>
