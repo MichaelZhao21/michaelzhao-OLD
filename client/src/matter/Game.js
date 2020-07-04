@@ -4,7 +4,7 @@ import Render from './Render';
 import './Game.scss';
 import stage from './stage.json';
 import ghost from './textures/BlueGhost.png';
-import { ReactComponent as JumpButton } from './textures/jump_button.svg';
+import { ReactComponent as DirButton } from './textures/direction_button.svg';
 
 class Game extends React.Component {
     constructor(props) {
@@ -184,7 +184,7 @@ class Game extends React.Component {
         }
 
         // Removed document touch bc it's deprecated in Gecko 25
-        if ('ontouchstart' in window) {
+        if ('onTouchStart' in window) {
             return true;
         }
 
@@ -192,16 +192,24 @@ class Game extends React.Component {
         return mq(query);
     }
 
+    // Show UI buttons on mobile devices
     displayUIButtons = () => {
+        console.log(this.isTouchDevice());
         if (this.isTouchDevice()) {
             return (
                 <div id="ui-buttons">
-                    <JumpButton className="jump-button" />
+                    <DirButton className="ui-button up-button" onMouseDown={this.mouseDown(38)} onMouseUp={this.mouseUp(38)} onTouchStart={this.mouseDown(38)} onTouchEnd={this.mouseUp(38)} />
+                    <DirButton className="ui-button left-button" onMouseDown={this.mouseDown(37)} onMouseUp={this.mouseUp(37)} onTouchStart={this.mouseDown(37)} onTouchEnd={this.mouseUp(37)} />
+                    <DirButton className="ui-button right-button" onMouseDown={this.mouseDown(39)} onMouseUp={this.mouseUp(39)} onTouchStart={this.mouseDown(39)} onTouchEnd={this.mouseUp(39)} />
                 </div>
             )
         }
         return null;
     }
+
+    mouseDown = (code) => { this.keyMap[code] = true }
+
+    mouseUp = (code) => { this.keyMap[code] = false }
 
     // Renders the game object
     // TODO: figure out how to ACTUALLY write text

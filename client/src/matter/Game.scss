@@ -1,9 +1,25 @@
-#ui-buttons {
-    position: absolute;
-    left: 100px;
-    top: 10px;
-}
-
 canvas {
     display: block;
+}
+
+.ui-button {
+    position: fixed;
+    height: 4em;
+}
+
+.left-button {
+    left: 1em;
+    bottom: 2em;
+    transform: rotate(-90deg);
+}
+
+.up-button {
+    left: 3em;
+    bottom: 6em;
+}
+
+.right-button {
+    left: 5em;
+    bottom: 2em;
+    transform: rotate(90deg);
 }
