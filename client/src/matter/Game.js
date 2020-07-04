@@ -161,14 +161,10 @@ class Game extends React.Component {
     }
 
     // Sets key pressed to true
-    keyDown = (event) => {
-        this.keyMap[event.keyCode] = true;
-    }
+    keyDown = (event) => { this.keyMap[event.keyCode] = true }
 
     // Sets key pressed to false
-    keyUp = (event) => {
-        this.keyMap[event.keyCode] = false;
-    }
+    keyUp = (event) => { this.keyMap[event.keyCode] = false }
 
     // Sets player collision to true
     collisionActive = () => {
@@ -178,29 +174,28 @@ class Game extends React.Component {
     // Checks if the device is touchscreen or not
     isTouchDevice = () => {
         var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
-
+        
         var mq = function (query) {
             return window.matchMedia(query).matches;
         }
-
+    
         // Removed document touch bc it's deprecated in Gecko 25
-        if ('onTouchStart' in window) {
+        if ('ontouchstart' in window) {
             return true;
         }
-
+    
         var query = ['(', prefixes.join('touch-enabled),('), 'hi', ')'].join('');
         return mq(query);
     }
 
     // Show UI buttons on mobile devices
     displayUIButtons = () => {
-        console.log(this.isTouchDevice());
         if (this.isTouchDevice()) {
             return (
                 <div id="ui-buttons">
-                    <DirButton className="ui-button up-button" onMouseDown={this.mouseDown(38)} onMouseUp={this.mouseUp(38)} onTouchStart={this.mouseDown(38)} onTouchEnd={this.mouseUp(38)} />
-                    <DirButton className="ui-button left-button" onMouseDown={this.mouseDown(37)} onMouseUp={this.mouseUp(37)} onTouchStart={this.mouseDown(37)} onTouchEnd={this.mouseUp(37)} />
-                    <DirButton className="ui-button right-button" onMouseDown={this.mouseDown(39)} onMouseUp={this.mouseUp(39)} onTouchStart={this.mouseDown(39)} onTouchEnd={this.mouseUp(39)} />
+                    <button className="ui-button-wrapper" onMouseDown={() => this.mouseDown(38)} onMouseUp={() => this.mouseUp(38)} onTouchStart={() => this.mouseDown(38)} onTouchEnd={() => this.mouseUp(38)}><DirButton className="ui-button up-button" /></button>
+                    <button className="ui-button-wrapper" onMouseDown={() => this.mouseDown(37)} onMouseUp={() => this.mouseUp(37)} onTouchStart={() => this.mouseDown(37)} onTouchEnd={() => this.mouseUp(37)}><DirButton className="ui-button left-button" /></button>
+                    <button className="ui-button-wrapper" onMouseDown={() => this.mouseDown(39)} onMouseUp={() => this.mouseUp(39)} onTouchStart={() => this.mouseDown(39)} onTouchEnd={() => this.mouseUp(39)}><DirButton className="ui-button right-button" /></button>
                 </div>
             )
         }
