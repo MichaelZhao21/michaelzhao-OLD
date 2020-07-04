@@ -7,6 +7,12 @@ canvas {
     height: 4em;
 }
 
+.ui-button-wrapper {
+    background-color: transparent;
+    border-style: hidden;
+    position: fixed;
+}
+
 .left-button {
     left: 1em;
     bottom: 2em;
