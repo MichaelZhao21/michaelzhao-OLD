@@ -4,6 +4,7 @@ import Render from './Render';
 import './Game.scss';
 import stage from './stage.json';
 import ghost from './textures/BlueGhost.png';
+import { ReactComponent as JumpButton } from './textures/jump_button.svg';
 
 class Game extends React.Component {
     constructor(props) {
@@ -177,25 +178,25 @@ class Game extends React.Component {
     // Checks if the device is touchscreen or not
     isTouchDevice = () => {
         var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
-        
+
         var mq = function (query) {
             return window.matchMedia(query).matches;
         }
-    
+
         // Removed document touch bc it's deprecated in Gecko 25
         if ('ontouchstart' in window) {
             return true;
         }
-    
+
         var query = ['(', prefixes.join('touch-enabled),('), 'hi', ')'].join('');
         return mq(query);
     }
 
     displayUIButtons = () => {
         if (this.isTouchDevice()) {
-            return(
+            return (
                 <div id="ui-buttons">
-                    HERE ARE THE UI BUTTONS :DDDD
+                    <JumpButton className="jump-button" />
                 </div>
             )
         }
