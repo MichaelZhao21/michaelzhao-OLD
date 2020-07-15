@@ -9,7 +9,7 @@
 .name {
     position: absolute;
     font-family: $big-display-font;
-    font-size: 12em;
+    font-size: $font-size-huge;
     font-weight: 700;
     @include load-fade(names-fade, 1.5s);
     animation-fill-mode: forwards;
