@@ -19,17 +19,40 @@ $big-display-font: 'Oswald', sans-serif;
 $main-text-font: "Titillium Web", sans-serif;
 $title-font: 'Shadows Into Light Two', cursive;
 
-html, body {
-  height: 100%;
-  width: 100%;
-  min-height: 100%;
-}
-
 #root {
   width: 100%;
   min-height: 100%;
   background-color: $background-color;
   font-family: $main-text-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: $primary-dark;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $primary;
+  text-decoration: none;
+}
+
+p::selection, a::selection, h1::selection {
+  background: $primary-dark;
+  color: white;
 }
 
 .container {
@@ -49,21 +72,6 @@ html, body {
   background-color: transparent !important;
   color: white;
   font-size: $font-size-md;
-}
-
-a {
-  color: $primary-dark;
-  text-decoration: none;
-}
-
-a:hover {
-  color: $primary;
-  text-decoration: none;
-}
-
-p::selection, a::selection, h1::selection {
-  background: $primary-dark;
-  color: white;
 }
 
 @mixin load-fade($name, $time) {
