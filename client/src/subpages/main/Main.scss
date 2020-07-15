@@ -1,3 +1,56 @@
+@import '../../custom.scss';
+@include load-fade-frames(names-fade, 1rem);
+
 .game-div {
     display: none;
+}
+
+.name {
+    position: absolute;
+    font-family: $big-display-font;
+    font-size: 12em;
+    font-weight: 700;
+    @include load-fade(names-fade, 1.5s);
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.first-name {
+    top: 0.5em;
+    right: 1em;
+    color: $primary;
+    animation-delay: 0.5s;
+}
+
+.last-name {
+    top: 1.3em;
+    right: 1em;
+    color: $secondary;
+    animation-delay: 1s;
+}
+
+.main-links {
+    font-family: $main-text-font;
+    font-size: 8em;
+    font-weight: 400;
+    position: absolute;
+    left: 1em;
+    @include load-fade(names-fade, 1.5s);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.about-link {
+    bottom: 2.5em;
+}
+
+.advocacy-link {
+    bottom: 1.5em;
+    color: $primary-dark - 40;
+}
+
+.blog-link {
+    bottom: 0.5em;
+    color: $primary-dark - 80;
 }
