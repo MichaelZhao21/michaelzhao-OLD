@@ -1,5 +1,6 @@
 @import '../../custom.scss';
 @include load-fade-frames(names-fade, 1rem);
+@use 'sass:color';
 
 .game-div {
     display: none;
@@ -42,15 +43,15 @@
 }
 
 .about-link {
-    bottom: 2.5em;
+    bottom: 3em;
 }
 
 .advocacy-link {
-    bottom: 1.5em;
-    color: $primary-dark - 40;
+    bottom: 1.75em;
+    color: adjust-color($primary-dark, $blue: -30, $green: -30);
 }
 
 .blog-link {
     bottom: 0.5em;
-    color: $primary-dark - 80;
+    color: adjust-color($primary-dark, $blue: -60, $green: -60);
 }
