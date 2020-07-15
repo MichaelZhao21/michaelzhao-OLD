@@ -1,14 +1,12 @@
 @import "../../custom.scss";
-
 @include load-fade-frames(about-magic, 1rem);
 
 .about-title {
     color: $secondary;
     text-align: center;
     font-family: $title-font;
-    margin-bottom: 3rem;
-    padding-top: 1em;
-    margin-top: 0;
+    padding: 4vh 0;
+    margin: 0;
     font-size: $font-size-lg;
     @include load-fade(about-magic, 1.25s);
 }
@@ -17,7 +15,9 @@
     background-color: transparent;
     border: solid .2rem $secondary;
     border-radius: 2rem;
-    color: black;
+    color: white;
+    margin: 0 10vw;
+    font-size: $font-size-sm;
     padding: 2rem 2rem;
     opacity: 0;
     @include load-fade(about-magic, 1.25s);
@@ -35,8 +35,7 @@
     margin: auto;
 }
 
-.lsi {
-    background-color: transparent !important;
-    color: black;
-    font-size: x-large;
+.social-list {
+    padding-bottom: 1vh;
+    margin-bottom: 0 !important;
 }

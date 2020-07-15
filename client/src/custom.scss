@@ -1,48 +1,60 @@
-$primary: #f9eacd;
-$primary-dark-1: #F8BF6C;
-$primary-dark: #f09544;
-$secondary: #ea7526;
-$secondary-dark: #852f0f;
-$third: #FFAA55;
+$primary: #FFCEE5;
+$primary-dark: #FF8FC4;
+$secondary: #98C7FF;
+$secondary-dark: #3F8DEB;
 
-$font-size-lg: 5em;
+// Color presets
+$background-color: #212121;
 
+// Font size presets
+$font-size-lg: 7vw;
+$font-size-md: 2.5vw;
+$font-size-sm: 1.5vw;
 
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
-$main-text-font: "Titillium Web", sans-serif;
-
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+$big-display-font: 'Oswald', sans-serif;
+$main-text-font: "Titillium Web", sans-serif;
 $title-font: 'Shadows Into Light Two', cursive;
 
-.custom-container {
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+#root {
+  background-color: $background-color;
+  font-family: $main-text-font;
+}
+
+.container {
   width: auto;
   height: 100%;
 }
 
-@media only screen and (min-width: 992px) {
-  .custom-container {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .custom-container {
-    margin-left: 25rem;
-    margin-right: 25rem;
-  }
-}
-
 .spacer {
-  padding: 1em;
+  padding: 1vh;
+}
+
+.item-list {
+  list-style-type: none;
+}
+
+.lsi {
+  background-color: transparent !important;
+  color: white;
+  font-size: $font-size-md;
 }
 
 a {
-  color: $secondary-dark;
+  color: $primary-dark;
+  text-decoration: none;
 }
 
 a:hover {
-  color: $secondary;
+  color: $primary;
   text-decoration: none;
 }
 
@@ -65,5 +77,19 @@ p::selection, a::selection, h1::selection {
     100% {
         opacity: 1;
     }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .custom-container {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .custom-container {
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 }

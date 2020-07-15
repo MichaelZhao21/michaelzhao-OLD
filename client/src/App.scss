@@ -1,64 +1,5 @@
 @import "./custom.scss";
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
-#root {
-  min-height: 100%;
-  background-color: $primary;
-  font-family: $main-text-font;
-}
-
-.logo {
-  height: 3.5rem;
-  margin-left: 1rem;
-  
-  .cls-1 {
-    transition: 0.3s;
-  }
-}
-
-.logo:hover {
-  .cls-1 {
-    fill: $primary-dark;
-  }
-}
-
-.brand,
-.brand:focus,
-.brand:hover {
-  outline: 0 !important;
-  border: 0 none !important;
-  text-decoration: none;
-}
-
-.navbar {
-  padding: 1.5rem 0 1.5rem 0;
-}
-
-.nav-item {
-  padding: 0 1.5rem 0 1.5rem;
-  color: $secondary;
-  font-size: $font-size-lg;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.nav-item:hover {
-  color: $primary-dark-1;
-}
-
-.active.nav-item {
-  color: $secondary-dark;
-}
-
-div {
-  color: black;
-}
-
 @media only screen and (min-width: 992px) {
   .navbar {
     padding: 1.5rem 12.5rem 1.5rem 12.5rem;
@@ -75,9 +16,4 @@ div {
   .logo {
     margin-left: 4rem;
   }
-}
-
-.temp {
-  background-color: $secondary;
-  color: white;
 }
