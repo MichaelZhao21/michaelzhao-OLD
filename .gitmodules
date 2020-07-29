@@ -1,9 +1,0 @@
-[submodule "api"]
-	path = api
-	url = git@github.com:MichaelZhao21/api.git
-[submodule "blog"]
-	path = blog
-	url = git@github.com:MichaelZhao21/blog.git
-[submodule "advocacy"]
-	path = advocacy
-	url = git@github.com:MichaelZhao21/advocacy.git
