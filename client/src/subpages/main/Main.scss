@@ -8,24 +8,23 @@
 
 .name {
     position: absolute;
-    font-family: $big-display-font;
+    font-family: $title-font;
     font-size: $font-size-huge;
-    font-weight: 700;
     @include load-fade(names-fade, 1.5s);
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 .first-name {
-    top: 0.5em;
-    right: 1em;
+    top: 5vh;
+    right: 5vw;
     color: $primary;
     animation-delay: 0.5s;
 }
 
 .last-name {
-    top: 1.3em;
-    right: 1em;
+    top: 30vh;
+    right: 5vw;
     color: $secondary;
     animation-delay: 1s;
 }

@@ -7,17 +7,14 @@ $secondary-dark: #3F8DEB;
 $background-color: #212121;
 
 // Font size presets
-$font-size-huge: 10vw;
+$font-size-huge: 12vw;
 $font-size-title: 7vw;
 $font-size-lg: 5vw;
 $font-size-md: 2.5vw;
 $font-size-sm: 1.5vw;
 
 // Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
-$big-display-font: 'Oswald', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Titillium+Web&display=swap');
 $main-text-font: "Titillium Web", sans-serif;
 $title-font: 'Shadows Into Light Two', cursive;
 
