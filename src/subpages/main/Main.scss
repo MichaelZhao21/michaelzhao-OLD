@@ -2,10 +2,6 @@
 @include load-fade-frames(names-fade, 1rem);
 @use 'sass:color';
 
-.game-div {
-    display: none;
-}
-
 .name {
     position: absolute;
     font-family: $title-font;
