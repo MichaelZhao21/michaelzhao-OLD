@@ -9,10 +9,12 @@
 .name {
     font-family: $mono-font;
     font-size: $font-size-title;
+    font-weight: 300;
     @include load-fade(names-fade, 1.5s);
     animation-fill-mode: forwards;
     opacity: 0;
     margin: 0;
+    line-height: 0.8em;
 }
 
 .first-name {

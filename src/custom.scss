@@ -14,8 +14,8 @@ $font-size-md: 2.5vw;
 $font-size-sm: 1.5vw;
 
 // Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Titillium+Web&family=Neucha&family=Ubuntu+Mono&display=swap');
-$mono-font: 'Ubuntu Mono', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Titillium+Web&family=Neucha&Roboto+Mono:wght@300&display=swap');
+$mono-font: 'Roboto Mono', monospace;
 $hand-font: 'Neucha', cursive;
 $main-text-font: "Titillium Web", sans-serif;
 $title-font: 'Shadows Into Light Two', cursive;
