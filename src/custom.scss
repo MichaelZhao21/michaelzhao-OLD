@@ -8,13 +8,15 @@ $background-color: #212121;
 
 // Font size presets
 $font-size-huge: 12vw;
-$font-size-title: 7vw;
+$font-size-title: 6vw;
 $font-size-lg: 5vw;
 $font-size-md: 2.5vw;
 $font-size-sm: 1.5vw;
 
 // Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Titillium+Web&family=Neucha&family=Ubuntu+Mono&display=swap');
+$mono-font: 'Ubuntu Mono', monospace;
+$hand-font: 'Neucha', cursive;
 $main-text-font: "Titillium Web", sans-serif;
 $title-font: 'Shadows Into Light Two', cursive;
 
@@ -42,15 +44,16 @@ code {
 a {
   color: $primary-dark;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-  color: $primary;
+  text-shadow: 0 0 1.5rem white;
   text-decoration: none;
 }
 
 p::selection, a::selection, h1::selection {
-  background: $primary-dark;
+  background: $secondary;
   color: white;
 }
 
